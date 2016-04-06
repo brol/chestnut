@@ -1,0 +1,228 @@
+/* BEGIN LICENSE BLOCK ----------------------------------
+#
+# This file is part of Chestnut, a Dotclear 2 theme.
+#
+# Copyright (c) 2011 Azork - http://xtradotfreedotfr.free.fr
+# Licensed under the GPL version 2.0 license.
+# See LICENSE file or
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
+# -- END LICENSE BLOCK --------------------------------- */
+#menu, #navsm {display:none;}
+
+#nav {
+  display:block;
+  clear: both;
+	z-index:85;
+  margin-top: 100px;
+  width: 960px;
+  list-style: none !important;
+  padding: 2px 2px 0 2px;
+  height: 30px;
+  background: transparent url("../img/categoriesBG.png") no-repeat top left;
+  position: relative;
+}
+#nav ul {
+  height:30px;
+}
+
+#nav ul ul {
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  background:#e2dac9;
+  float: left;
+	height:auto;
+	line-height:auto;
+  width: auto;
+	display:none;
+	position:absolute;
+	left:0;
+	top:24px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+#nav ul li ul ul {
+	filter:none;
+	opacity:1;
+	background:none;
+	border:none;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+#nav ul li:hover {
+	position:relative;
+	z-index:90;
+}
+#nav ul li:hover ul {
+	display:block;
+}
+
+#nav li {
+  float: left;
+  display: block;
+  height: 25px;
+  line-height: 25px;
+}
+
+* html #nav li a { /* Filter for IE6 to prevent li stacking */
+  float: left;
+  text-decoration: none;
+}
+* html #nav li a { /* Filter for IE6 to prevent li stacking */
+  float: left;
+  text-decoration: none;
+}
+#nav li a {
+  display: block;
+  height: 26px;
+  font-size: 12px;
+  padding-left: 9px;
+  padding-right: 9px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: background 150ms ease;
+  -moz-transition: background 150ms ease;
+  transition: background 150ms ease;
+}
+
+#nav a:hover {
+  background: #e2dac9;
+  color: #554c46;
+  text-decoration: none;
+}
+#nav:hover #nav li:hover a { color: #554c46; background: #e2dac9; }
+
+#nav li:hover {
+  cursor: pointer; /* For IE6 */
+  color: #554c46;
+  background: #e2dac9;
+  text-decoration: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#nav li.top_parent, #nav li.current_page_item {
+  cursor: pointer; /* For IE6 */
+  color: #554c46;
+  background: #b88f00;
+  text-decoration: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+#nav li li.top_parent, #nav li li.current_page_item {
+  cursor: pointer; /* For IE6 */
+  text-decoration: none;
+	background:none;
+}
+
+#nav li li.current_page_item a {
+	color:#554c46;
+}
+#nav ul li li.current_page_item li a {}
+#nav ul li:hover {
+	position:relative;
+	z-index:90;
+}
+#nav ul li:hover ul {
+	display:block;
+}
+#nav ul li ul ul {
+	position:relative;
+	top:0;
+	padding:0;
+	margin:0;
+}
+#nav ul li {
+	padding:0;
+	vertical-align:middle;
+	float:left;
+	position:relative;
+}
+#nav ul li li:hover {
+  cursor: pointer; /* For IE6 */
+  text-decoration: none;
+  color: #554c46;
+  background: #e2dac9;
+}
+#nav ul li li {
+	float:none;
+	clear:both;
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+	display:block;
+	position:relative;
+	line-height:1.3em;
+  min-width: 150px;
+}
+#nav ul li li li {
+	padding:0;
+}
+* html #nav ul li li {
+	width:200px;
+}
+#nav ul li a {
+	white-space:nowrap;
+}
+* html #nav ul li a {
+	width:10px;
+}
+* html #nav ul li li a, * html #nav ul li li ul {
+	width:100%;
+	margin:0;
+}
+#nav ul li:hover li, #nav ul li li li:hover {
+  background: #e2dac9;
+}
+#nav ul li li a:hover, #nav ul li li li a:hover {
+  color:#554c46;
+  background: #d0c6b0;
+}
+#nav ul li li, #nav ul li li li,
+#nav ul li li a, #nav ul li li li a {}
+#nav ul li ul li a {
+	display:block;
+	position:relative;
+	text-decoration:none;
+	height:2em;
+	line-height:2em;
+}
+.caret {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px dashed;
+  display: inline-block;
+  height: 0;
+  margin-left: 4px;
+  vertical-align: middle;
+  width: 0;
+}
+
+#nav ul ul li .caret, #sidebar .w-block-menu .caret {display:none;}

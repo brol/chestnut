@@ -1,0 +1,63 @@
+/* BEGIN LICENSE BLOCK ----------------------------------
+#
+# This file is part of Chestnut, a Dotclear 2 theme.
+#
+# Copyright (c) 2011 Azork - http://xtradotfreedotfr.free.fr
+# Licensed under the GPL version 2.0 license.
+# See LICENSE file or
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
+# -- END LICENSE BLOCK --------------------------------- */
+#nav, #menu {display:none;}
+
+#navsm {
+  margin-top: 100px;
+  width: 960px;
+  list-style: none !important;
+  padding: 2px 2px 0 2px;
+  height: 30px;
+  background: transparent url("../img/categoriesBG.png") no-repeat top left;
+  position: relative;
+}
+
+#navsm li {
+  float: left;
+  line-height: 25px;
+  margin: 0 1px;
+  list-style: none !important;
+}
+
+#navsm li:before {
+  content: "|";
+  margin-left:1px;
+}
+
+#navsm a {
+  color: #554c46;
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+  padding: 0 8px;
+  float: left;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: background 150ms ease;
+  -moz-transition: background 150ms ease;
+  transition: background 150ms ease;
+}
+#navsm a:hover {
+  background: #e2dac9;
+  text-decoration: none;
+}
+#navsm:hover #navsm li:hover a { color: #554c46; background: #e2dac9; }
+
+#navsm li.active > a {
+  background: #B88F00;
+  text-decoration: none;
+  color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#navsm li.active a:hover { background: #B88F00; }

@@ -1,0 +1,85 @@
+/* BEGIN LICENSE BLOCK ----------------------------------
+#
+# This file is part of Chestnut, a Dotclear 2 theme.
+#
+# Copyright (c) 2011 Azork - http://xtradotfreedotfr.free.fr
+# Licensed under the GPL version 2.0 license.
+# See LICENSE file or
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
+# -- END LICENSE BLOCK --------------------------------- */
+#nav, #navsm {display:none;}
+
+#menu {
+  margin-top: 100px;
+  width: 960px;
+  list-style: none;
+  padding: 2px 2px 0 2px;
+  height: 30px;
+  background: transparent url("../img/categoriesBG.png") no-repeat top left;
+  position: relative;
+}
+
+#menu li {
+  float: left;
+  line-height: 25px;
+  margin: 0 1px;
+}
+
+#menu a {
+  color: #554c46;
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+  padding: 0 8px;
+  float: left;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: background 150ms ease;
+  -moz-transition: background 150ms ease;
+  transition: background 150ms ease;
+}
+#menu a:hover {
+  background: #e2dac9;
+  text-decoration: none;
+}
+#container_menu:hover #menu li:hover a { color: #554c46; background: #e2dac9; }
+
+#menu li.category-current > a {
+  background: #B88F00;
+  text-decoration: none;
+  color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#menu li.category-current a:hover { background: #B88F00; }
+
+#menu li:hover .submenu { left: auto; }
+
+.submenu {
+  position: absolute;
+  left: -9999em;
+  margin-top: 24px;
+  min-width: 150px;
+  background: #e2dac9;
+  padding: 4px;
+  z-index: 5000;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.submenu ul { overflow: hidden; }
+.submenu ul li { line-height: 22px; border-bottom: 1px solid #cdc3ab; padding: 2px 0; }
+.submenu ul li,
+.submenu ul li a { float: none !important; color: #554c46; background: none !important; }
+.submenu ul li a:hover { background: #d0c6b0 !important; }

@@ -1,0 +1,86 @@
+<!-- # Last Entries -->
+<tpl:SysIf current_mode="!default">
+<tpl:Entries lastn="4" no_context="1">
+  <tpl:EntriesHeader>
+  <div class="mywidgets">
+    <div class="last-post">
+      <h2 class="archive-bt">{{tpl:lang Recent articles}}<a href="{{tpl:BlogArchiveURL}}">{{tpl:lang Archives}}</a></h2>
+  </tpl:EntriesHeader>
+  <tpl:EntryIf first="1">
+    <div class="post" lang="{{tpl:EntryLang}}" role="article">
+      {{tpl:EntryFirstImage size="sq" class="square left" with_category="1"}}
+
+      <h3 class="latest-news-article"><a href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}}</a></h3>
+
+      <!-- # Entry -->
+      <tpl:EntryIf extended="1">
+      <div class="post-content">{{tpl:EntryExcerpt encode_html="1" remove_html="1" cut_string="80"}}<span class="readmore-ellipsis">...</span></div>
+      </tpl:EntryIf>
+      <tpl:EntryIf extended="0">
+      <div class="post-content">{{tpl:EntryContent encode_html="1" remove_html="1" cut_string="80"}}<span class="readmore-ellipsis">...</span></div>
+      </tpl:EntryIf>
+
+    </div>
+    <div class="hr-style1"><hr /></div>
+  </tpl:EntryIf>
+
+  <tpl:EntryIf first="0">
+  <p class="post latest-news-article"><a href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}}</a></p>
+  <div class="hr-style1"><hr /></div>
+  </tpl:EntryIf>
+
+  <tpl:EntriesFooter>
+    </div>
+  </div>
+  </tpl:EntriesFooter>
+</tpl:Entries>
+</tpl:SysIf>
+
+<!-- # Last Comments -->
+<tpl:SysIf current_mode="!post">
+  <tpl:Comments lastn="3" order="desc" with_pings="0">
+  <tpl:CommentsHeader>
+  <div class="mywidgets">
+    <div class="last-comment">
+      <h2>{{tpl:lang Recent comments}}</h2>
+  </tpl:CommentsHeader>
+  <!-- # Comment -->
+    <div style="overflow:hidden;">
+      <img src="http://www.gravatar.com/avatar/{{tpl:CommentAuthorMailMD5}}?s=48" alt="{{tpl:CommentAuthor}}" class="avatar left" />
+        <h3 class="comment-author">{{tpl:CommentAuthor}} {{tpl:lang said:}}</h3>
+        <p class="comment-desc"><a href="{{tpl:CommentPostURL}}#c{{tpl:CommentID}}">{{tpl:CommentContent encode_html="1" remove_html="1" cut_string="120"}}...</a></p>
+        <p class="right"><a href="{{tpl:CommentPostURL}}">{{tpl:lang Read this article}}</a></p>
+    </div>
+    <div class="hr-style2"><hr /></div>
+  <tpl:CommentsFooter>
+    </div>
+  </div>
+  </tpl:CommentsFooter>
+  </tpl:Comments>
+</tpl:SysIf>
+
+<!-- # Trackbacks -->
+<tpl:SysIf current_mode="post">
+  <tpl:EntryIf show_pings="1" has_ping="1">
+    <div class="mywidgets">
+      <div class="trackbacks">
+        <h2>{{tpl:lang They posted on the same topic}}</h2>
+        <tpl:Pings lastn="4">
+          <div id="c{{tpl:PingID}}" class="{{tpl:PingIfOdd}} {{tpl:PingIfFirst}}">
+            <h3 class="latest-ping"><a href="{{tpl:PingAuthorURL}}" {{tpl:PingNoFollow}}>{{tpl:PingTitle encode_html="1"}}</a></h3>
+
+            <div class="post-content">{{tpl:PingContent cut_string="80"}}<span class="readmore-ellipsis">...</span></div>
+					  <p><small class="right">{{tpl:lang Source:}} <a href="{{tpl:PingAuthorURL}}">{{tpl:PingBlogName}}</a></small></p>
+
+          </div>
+          <div class="hr-style1"><hr /></div>
+        <tpl:PingsFooter>
+        <tpl:EntryIf pings_active="1">
+        <p id="ping-url"><a href="{{tpl:EntryPingLink}}">{{tpl:lang Trackback URL}}</a></p>
+        </tpl:EntryIf>
+        </tpl:PingsFooter>
+        </tpl:Pings>
+      </div>
+    </div>
+  </tpl:EntryIf>
+</tpl:SysIf>

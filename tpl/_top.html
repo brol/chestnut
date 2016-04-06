@@ -1,0 +1,50 @@
+<div id="top" role="banner">
+  <div id="toplinks">
+    <div class="left">
+      <ul id="top-navlinks">
+        <li><a href="{{tpl:BlogURL}}">{{tpl:lang Home}}</a>&nbsp;&middot;</li>
+        <li><a href="{{tpl:BlogArchiveURL}}">{{tpl:lang Archives}}</a></li>
+      </ul>
+    </div>
+    <p class="right"><a href="{{tpl:BlogFeedURL}}" class="feed">{{tpl:lang Subscribe}}</a></p>
+  </div>
+
+  <h1><a href="{{tpl:BlogURL}}">{{tpl:BlogName encode_html="1"}}</a></h1>
+  <small id="description">{{tpl:BlogDescription encode_html="1"}}</small>
+
+  <form method="get" action="{{tpl:BlogURL}}" id="topsearch">
+    <fieldset>
+    <input type="text" value="{{tpl:lang Search}}..." name="q" id="query" maxlength="255" size="10"
+    onfocus="if(this.value=='{{tpl:lang Search}}...') {this.value=''};" onblur="if(this.value=='') {this.value='{{tpl:lang Search}}...'};" />
+    </fieldset>
+  </form>
+
+  <tpl:Categories level="1">
+  <tpl:CategoriesHeader><div id="container_menu"><ul id="menu" role="navigation"></tpl:CategoriesHeader>
+    <li {{tpl:CategoryIfCurrent}}><a href="{{tpl:CategoryURL}}">{{tpl:CategoryTitle encode_html="1"}}</a>
+      <tpl:CategoryFirstChildren>
+  <tpl:CategoriesHeader><div class="submenu"><ul></tpl:CategoriesHeader>
+    <li><a href="{{tpl:CategoryURL}}">{{tpl:CategoryTitle encode_html="1"}}</a></li>
+  <tpl:CategoriesFooter></ul></div></tpl:CategoriesFooter>
+      </tpl:CategoryFirstChildren>
+    </li>
+    <li> | </li>
+  <tpl:CategoriesFooter></ul></div></tpl:CategoriesFooter>
+  </tpl:Categories>
+    
+  <nav role="navigation" id="nav">
+  {{tpl:Menu level="0"}}
+  </nav>
+  
+  <div id="navsm">
+  {{tpl:SimpleMenu id="supranav" description="title"}}
+  </div>
+  <!-- end #menu -->
+
+  <!-- # --BEHAVIOR-- publicTopAfterContent -->
+  {{tpl:SysBehavior behavior="publicTopAfterContent"}}
+</div>
+
+<p id="prelude" role="navigation"><a href="#main">{{tpl:lang To content}}</a> |
+<a href="#blognav">{{tpl:lang To menu}}</a> |
+<a href="#search">{{tpl:lang To search}}</a></p>

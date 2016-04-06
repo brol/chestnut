@@ -1,0 +1,21 @@
+<!-- # This template is included at the end of _head.html template -->
+<script type="text/javascript" src="{{tpl:BlogThemeURL}}/js/jquery.cycle.min.js"></script>
+<script type="text/javascript" src="{{tpl:BlogThemeURL}}/js/jquery-ui-1.8.10.custom.min.js"></script>
+<script type="text/javascript" src="{{tpl:BlogThemeURL}}/js/main.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+var website = {
+  ajaxsearch: '{{tpl:BlogURL}}ajaxsearch/'
+};
+//]]>
+</script>
+
+<!--[if lte IE 7]>
+<style type="text/css">
+    #menu li:hover .submenu { display:none; }
+</style>
+<![endif]-->
+
+{{tpl:include src="user_head.html"}}
+{{tpl:SysBehavior behavior="publicHeadContent"}}

@@ -1,0 +1,15 @@
+<div id="slider">
+  <tpl:Entries lastn="3" selected="1">
+  <div class="slider-container" lang="{{tpl:EntryLang}}">
+    <a href="{{tpl:EntryURL}}" class="image-container">{{tpl:EntryFirstImage size="o" class="featured" with_category="1"}}</a>
+
+    <div class="featured-post">
+      <h2 class="post-title"><a href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}}</a></h2>
+
+      <!-- # Entry -->
+      <p class="post-content">{{tpl:EntryContent encode_html="1" remove_html="1" full="1" cut_string="120"}}<span class="readmore-ellipsis">...</span></p>
+      <p class="read-it right"><a href="{{tpl:EntryURL}}" title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:lang Continue reading}}</a></p>
+    </div>
+  </div>
+  </tpl:Entries>
+</div><!-- End #slider -->
