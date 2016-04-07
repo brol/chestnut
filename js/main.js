@@ -6,7 +6,6 @@ $(function() {
 		timeout: 8000
 	});
 
-
 	// Jquery - Autocomplete Plugin
 	$('#q,#query').autocomplete({
 		minLength: 2,

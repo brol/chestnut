@@ -4,6 +4,7 @@
 # This file is part of Chestnut, a Dotclear 2 theme.
 #
 # Copyright (c) 2011 Azork - http://xtradotfreedotfr.free.fr
+# Contributor: Pierre Van Glabeke - https://github.com/brol/chestnut
 # Licensed under the GPL version 2.0 license.
 # See LICENSE file or
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -17,17 +18,57 @@ if (!defined('DC_RC_PATH')) { return; }
 l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/public');
 
 # appel css menu
-$core->addBehavior('publicHeadContent','chestnutmenu_publicHeadContent');
+$core->addBehavior('publicHeadContent','chestnutPublicHeadContent');
 
-function chestnutmenu_publicHeadContent($core)
+function chestnutPublicHeadContent($core)
 {
+    # appel css menu
 	$style = $core->blog->settings->themes->chestnut_menu;
 	if (!preg_match('/^menucat|menu|simplemenu|menuno$/',$style)) {
 		$style = 'menucat';
 	}
 
-	$url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
-	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/css/".$style.".css\" />\n";
+	$theme_url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
+	echo '<link rel="stylesheet" type="text/css" media="projection, screen" href="'.$theme_url."/css/".$style.".css\" />\n";
+
+
+    # appel css slide1/slide2 ou aucun
+    # appel css slide on the following pages
+    if ($core->blog->settings->themes->chestnut_slide!=0)
+    {
+        if ($core->blog->settings->themes->chestnut_slide==1)
+        {
+            echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$theme_url."/css/slide.css\" />\n";
+            echo '<script type="text/javascript" src="'.$theme_url."/js/jquery.cycle.min.js\"></script>\n";
+        }
+	}
+}
+
+$core->tpl->addBlock('ChestnutIf', array('tplChestnut', 'ChestnutIf'));
+$core->tpl->addBlock('ChestnutIfOnFollowingPages', array('tplChestnut', 'ChestnutIfOnFollowingPages'));
+
+class tplChestnut
+{
+    public static function ChestnutIf($attr,$content)
+    {
+        global $core;
+
+        if (!empty($attr['slide']) && ($attr['slide']==$core->blog->settings->themes->chestnut_slide))
+        {
+            return $content;
+		}
+    }
+
+    public static function ChestnutIfOnFollowingPages($attr,$content)
+    {
+        global $core;
+
+        if ($core->url->type=='default-page' && $core->blog->settings->themes->chestnut_slidenav=='yesslidenav')
+        {
+            return $content;
+        }
+
+    }
 }
 
 # Exclude Current Post

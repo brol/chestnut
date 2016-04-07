@@ -1,8 +1,11 @@
+v1.2 - 07/04/2016 - Pierre Van Glabeke
+* ajout configurateur pour affichage slide (oui/non + page suivantes)
+
 v1.1 - 06/04/2016 - Pierre Van Glabeke
 * html5
 * héritage de thème, mustek
-* modifs css
 * ajout configurateur pour choix du menu (menu des catégories / simplemenu / menu / aucun)
-* remplacement en footer de blogextra par custom
+* widgets custom intégrés dans le footer, à la place de blogextra
+* modifs css
 * dc2.9 requis
 * ne fonctionne pas avec la version 2.2.0 de jquery

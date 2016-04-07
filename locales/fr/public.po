@@ -1,98 +1,125 @@
+# Language: Français
+# Module: chestnut - 1.2
+# Date: 2016-04-07 13:07:31
+# Translated with translater 2015.03.02
+
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: chestnut 1.2\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: brol <contact@brol.info>\n"
+"PO-Revision-Date: 2016-04-07T13:07:31+00:00\n"
+"Last-Translator: brol\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
 
-msgid "Posted"
-msgstr "Publié"
-
-msgid "Article"
-msgstr "Article"
-
-msgid "Be the first to comment on this article"
-msgstr "Soyez le premier à réagir sur cet article"
-
-msgid "Comments are closed"
-msgstr "Les commentaires sont fermés"
-
-msgid "Author"
-msgstr "Auteur"
-
-msgid "Author:"
-msgstr "Auteur :"
-
-msgid "Title"
-msgstr "Titre"
-
-msgid "You might also like"
-msgstr "À voir également"
-
-msgid "Read this article"
-msgstr "Voir l'article"
-
-msgid "Recent comments"
-msgstr "Vos réactions"
-
-msgid "Recent articles"
-msgstr "Articles récents"
-
-msgid "updated on"
-msgstr "modifié le"
-
+#: tpl/_footer.html:7
 msgid "Theme"
 msgstr "Thème"
 
+#: tpl/_footer.html:7
+msgid "Design by"
+msgstr "Design par"
+
+#: tpl/_footer.html:8
+msgid "Last site update"
+msgstr "Dernière mise à jour"
+
+#: tpl/archive.html:30
+#: tpl/archive_month.html:40
+#: tpl/tags.html:31
+msgid "Sort"
+msgstr "Trier"
+
+#: tpl/archive.html:45
+msgid "category"
+msgstr "catégorie"
+
+#: tpl/archive.html:76
+#: tpl/tags.html:69
+msgid "View all"
+msgstr "Voir tout"
+
+#: tpl/attachment.html:3
+msgid "No attachment"
+msgstr "Aucune annexe"
+
+#: tpl/category.html:68
+msgid "Subcategories:"
+msgstr "Sous-catégories :"
+
+#: tpl/comment.html:3
+msgid "Comments are closed"
+msgstr "Les commentaires sont fermés"
+
+#: tpl/comment.html:8
+msgid "Be the first to comment on this article"
+msgstr "Soyez le premier à réagir sur cet article"
+
+#: tpl/page.html:16
+#: tpl/post.html:60
+msgid "Posted"
+msgstr "Publié"
+
+#: tpl/page.html:18
+#: tpl/post.html:62
+msgid "updated on"
+msgstr "modifié le"
+
+#: tpl/page.html:28
+#: tpl/post.html:72
+msgid "Article"
+msgstr "Article"
+
+#: tpl/page.html:48
+#: tpl/post.html:92
 msgid "Stay in touch with the latest news and subscribe to the"
 msgstr "Restez au courant de l'actualité et abonnez-vous au"
 
+#: tpl/page.html:49
+#: tpl/post.html:93
+msgid "RSS Feed"
+msgstr "Flux RSS"
+
+#: tpl/page.html:50
+#: tpl/post.html:94
 msgid "about this category"
 msgstr "de cette catégorie"
+
+#: tpl/page.html:76
+#: tpl/post.html:120
+msgid "You might also like"
+msgstr "À voir également"
+
+#: tpl/sidebar.html:7
+msgid "Recent articles"
+msgstr "Articles récents"
+
+#: tpl/sidebar.html:45
+msgid "Recent comments"
+msgstr "Vos réactions"
+
+#: tpl/sidebar.html:50
+msgid "said:"
+msgstr "a écrit :"
+
+#: tpl/sidebar.html:52
+msgid "Read this article"
+msgstr "Voir l'article"
+
+#: tpl/sidebar.html:73
+msgid "Source:"
+msgstr "Source :"
 
 msgid "of the site"
 msgstr "du site"
 
-msgid "RSS Feed"
-msgstr "Flux RSS"
-
-msgid "Sort"
-msgstr "Trier"
-
 msgid "said"
 msgstr "a écrit"
-
-msgid "said:"
-msgstr "a écrit :"
-
-msgid "Source:"
-msgstr "Source :"
-
-msgid "Last site update"
-msgstr "Dernière mise à jour"
 
 msgid "next"
 msgstr "suiv"
 
 msgid "prev"
 msgstr "préc"
-
-msgid "category"
-msgstr "catégorie"
-
-msgid "Subcategories:"
-msgstr "Sous-catégories :"
-
-msgid "View all"
-msgstr "Voir tout"
-
-msgid "Design by"
-msgstr "Design par"
-
-msgid "No attachment"
-msgstr "Aucune annexe"

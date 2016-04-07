@@ -1,9 +1,9 @@
 <div id="slider">
-  <tpl:Entries lastn="3" selected="1">
+  <tpl:Entries selected="1" lastn="3" ignore_pagination="1" no_context="1">
   <div class="slider-container" lang="{{tpl:EntryLang}}">
     <a href="{{tpl:EntryURL}}" class="image-container">{{tpl:EntryFirstImage size="o" class="featured" with_category="1"}}</a>
 
-    <div class="featured-post">
+    <div class="featured-post" role="article">
       <h2 class="post-title"><a href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}}</a></h2>
 
       <!-- # Entry -->

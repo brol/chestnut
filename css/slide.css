@@ -1,0 +1,73 @@
+/*
+# -- BEGIN LICENSE BLOCK ---------------------------------------
+#
+# This file is part of Chestnut, a Dotclear 2 theme.
+#
+# Copyright (c) 2011 Azork - http://xtradotfreedotfr.free.fr
+# Contributor: Pierre Van Glabeke - https://github.com/brol/chestnut
+# Licensed under the GPL version 2.0 license.
+# See LICENSE file or
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
+# -- END LICENSE BLOCK -----------------------------------------
+*/
+#slider {
+  height: 233px;
+  position: relative;
+  width: 618px;
+  overflow: hidden;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+}
+
+#slider .slider-container {
+  float: left;
+  display: inline;
+  width: 618px;
+}
+#slider .slider-container .image-container {
+  overflow: hidden;
+  margin: 4px;
+  height: 225px;
+  display: block;
+}
+#slider .slider-container img {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#slider .featured-post {
+  height: 225px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  background: transparent url("../img/featuredBG.png") no-repeat top left;
+  width: 235px;
+	padding-left: 150px;
+}
+#slider .featured-post .post-title { font-size: 24px; line-height: 26px; font-weight: 700; padding: 15px 20px 0 10px; }
+#slider .featured-post .post-title a { color: #cd9522; }
+#slider .featured-post .post-content {
+  padding: 0 10px 0 10px;
+}
+#slider .featured-post .read-it { margin-right: 10px; margin-top: 0; margin-bottom: 0; }
+#slider .featured-post .read-it a:link,
+#slider .featured-post .read-it a:visited {
+	display: block;
+  background: #726a64 url("../img/orange-arrow.png") no-repeat right 50%;
+  color: #fff;
+  padding: 8px 24px 8px 8px;
+  text-transform: uppercase;
+  font-size: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+	-webkit-box-shadow: 1px 1px 1px #BBBBBB;
+	-moz-box-shadow: 1px 1px 1px #BBBBBB;
+	box-shadow: 1px 1px 1px #BBBBBB;
+}
+#slider .featured-post .read-it a:hover {
+  text-decoration: none;
+  background: #8d847f url("../img/orange-arrow.png") no-repeat right 50%;
+}
