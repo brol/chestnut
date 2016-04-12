@@ -1,5 +1,7 @@
-v1.2 - 07/04/2016 - Pierre Van Glabeke
-* ajout configurateur pour affichage slide (oui/non + page suivantes)
+v1.2 - 12/04/2016 - Pierre Van Glabeke
+* ajout configurateur pour affichage slide (oui/non + pages suivantes de l'accueil)
+* ajout aide intégrée en français
+* jquery 1.11.3 mini requise (ne fonctionne plus avec v1.4.2)
 
 v1.1 - 06/04/2016 - Pierre Van Glabeke
 * html5

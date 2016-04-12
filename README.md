@@ -14,8 +14,8 @@ Depuis "Personnaliser le thème", il est possible de choisir :
 
 Le slide
 --------
-Le slide permet d'afficher des images originales de 650px de large x 300px de haut.
-Ils sont positionnés sous la barre de menu, la liste des billets sera en-dessous et la sidebar à leur droite.
+Le slide permet d'afficher l'image, le titre et les 120 premiers caractères du billet.
+Il est positionné sous la barre de menu, la liste des billets sera en-dessous et la sidebar à leur droite.
 
 Deux choix possibles :
 * Pas de slide

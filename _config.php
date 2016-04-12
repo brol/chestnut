@@ -13,6 +13,11 @@
 
 if (!defined('DC_CONTEXT_ADMIN')) { return; }
 
+// Load contextual help
+if (file_exists(dirname(__FILE__).'/locales/'.$_lang.'/resources.php')) {
+	require dirname(__FILE__).'/locales/'.$_lang.'/resources.php';
+}
+
 global $core;
 
 //PARAMS
@@ -156,3 +161,5 @@ echo
 form::combo('chestnut_slidenav',$chestnut_slidenav_combo,$my_slidenav).
 '</p>'.
 '</div>';
+
+dcPage::helpBlock('chestnut');

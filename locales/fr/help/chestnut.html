@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+	<head>
+	  <title>Aide de Chestnut</title>
+	</head>
+	<body>
+    <h4>Spécificités du thème</h4>
+    <p>Le thème est compatible avec <a href="http://fr.gravatar.com/">Gravatar</a> pour personnaliser votre avatar.<br />
+    L'auteur d'un billet peut afficher une image personnalisée (avatar ou autres) en bas de page. Pour cela, il suffit d'ajouter une image au format jpg à la racine du dossier public de votre blog. Le nom de l'image jpg doit être identique au nom de l'auteur qui a posté le billet (ex: si votre pseudo est Toto comme auteur, alors le nom de l'image sera Toto.jpg).<br />
+    Les widgets du volet supplémentaire sont intégrés au footer.</p>
+
+    <h4>Personnalisations du thème</h4>
+    <p>Depuis "Personnaliser le thème", il est possible de choisir :</p>
+    <ul>
+      <li>le type de menu à afficher (Menu des catégories (css/menucat.css) ou Simplemenu (pas de niveau, css/simplemenu.css) ou <a href="http://plugins.dotaddict.org/dc2/details/menu">Menu</a> (possibilité de niveaux sous forme verticale, css/menu.css) ou aucun menu),</li>
+      <li>d'afficher ou non en page d'accueil le slide,</li>
+      <li>d'afficher ou non le slide dans les pages suivantes de la page d'accueil.</li>
+    </ul>
+    
+    <h5>Le slide</h5>
+    <p>Le slide permet d'afficher l'image, le titre et les 120 premiers caractères du billet.<br />
+    Il est positionné sous la barre de menu, la liste des billets sera en-dessous et la sidebar à leur droite.</p>
+    
+    <p>Deux choix possibles :</p>
+    <ul>
+      <li>Pas de slide</li>
+      <li>Slide</li>
+    </ul>
+
+    <p>Par défaut, le slide s'appuie sur les 3 derniers billets sélectionnés. Vous pouvez cependant l'utiliser pour afficher les billets d'une catégorie ou d'un tag.<br />
+    Pour une catégorie précise on mettra à la place de <code>&lt;tpl:Entries selected="1" lastn="3" ignore_pagination="1" no_context="1"&gt;</code> ceci <code>&lt;tpl:Entries category="Url-de-votre-categorie" lastn="3" ignore_pagination="1" no_context="1"&gt;</code>.<br />
+    Et pour un mot-clé précis, cela <code>&lt;tpl:Entries tag="Nom du tag" lastn="3" ignore_pagination="1" no_context="1"&gt;</code>.</p>
+    
+    <p>Rappel du code du slide (featured-home.html) :</p>
+    <p><code>
+&lt;div id="slider"&gt;
+  &lt;tpl:Entries selected="1" lastn="3" ignore_pagination="1" no_context="1"&gt;
+  &lt;div class="slider-container" lang="{{tpl:EntryLang}}"&gt;
+    &lt;a href="{{tpl:EntryURL}}" class="image-container"&gt;{{tpl:EntryFirstImage size="o" class="featured" with_category="1"}}&lt;/a&gt;
+
+    &lt;div class="featured-post" role="article"&gt;
+      &lt;h2 class="post-title"&gt;&lt;a href="{{tpl:EntryURL}}"&gt;{{tpl:EntryTitle encode_html="1"}}&lt;/a&gt;&lt;/h2&gt;
+
+      &lt;!-- # Entry --&gt;
+      &lt;p class="post-content"&gt;{{tpl:EntryContent encode_html="1" remove_html="1" full="1" cut_string="120"}}&lt;span class="readmore-ellipsis"&gt;...&lt;/span&gt;&lt;/p&gt;
+      &lt;p class="read-it right"&gt;&lt;a href="{{tpl:EntryURL}}" title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}"&gt;{{tpl:lang Continue reading}}&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/tpl:Entries&gt;
+&lt;/div&gt;&lt;!-- End #slider --&gt;
+</code>
+    </p>
+  </body>
+</html>
