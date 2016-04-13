@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+	<head>
+	  <title>Help for Chestnut</title>
+	</head>
+	<body>
+    <h4>Specifics theme</h4>
+    <p>The theme is compatible with <a href="http://en.gravatar.com/">Gravatar</a> to customize your avatar.<br />
+    The author of a ticket can display a custom image (or other avatar) footer. To do this, simply add a jpg image to the root public folder of your blog. The name of the jpg image must be identical to the name of the author who posted the note (ie if your name is Toto as an author, then the name of the image will Toto.jpg).<br />
+    Widgets additional component are integrated footer.</p>
+
+    <h4>Customizing the theme</h4>
+    <p>Since "Custom Theme", it is possible to choose:</p>
+    <ul>
+      <li>the type of menu display (menu categories (css/menucat.css) or SimpleMenu (not level, css/simplemenu.css) or <a href="http://plugins.dotaddict.org/dc2/details/menu">Menu</a> (in vertical form levels, css/menu.css) or no menu),</li>
+      <li>to display or not on the home page the slide,</li>
+      <li>to display (or not) the slide in the following pages of the home page.</li>
+    </ul>
+
+    <h5>The slide</h5>
+    <p>The slide displays the image, the title and the first 120 characters of the ticket.<br />
+    It is positioned below the menu bar, the range of tickets will be below and the sidebar to the right.</p>
+
+    <p>Two choices:</p>
+    <ul>
+      <li>No slide</li>
+      <li>Slide</li>
+    </ul>
+
+    <p>By default, the slide is based on the last 3 selected tickets. However, you can use it to view the notes of a category or tag.<br />
+    For a specific category will be put in place to <code>&lt;tpl:Entries selected="1" lastn="3" ignore_pagination="1" no_context="1"&gt;</code> this <code>&lt;tpl:Entries category="Url-of-your-category" lastn="3" ignore_pagination="1" no_context="1"&gt;</code>.<br />
+    And for a specific tag, this <code>&lt;tpl:Entries tag="Tag" lastn="3" ignore_pagination="1" no_context="1"&gt;</code>.</p>
+
+    <p>Rappel du code du slide (featured-home.html) :</p>
+    <p>
+      <code>
+      &lt;div id="slider"&gt;
+        &lt;tpl:Entries selected="1" lastn="3" ignore_pagination="1" no_context="1"&gt;
+        &lt;div class="slider-container" lang="{{tpl:EntryLang}}"&gt;
+          &lt;a href="{{tpl:EntryURL}}" class="image-container"&gt;{{tpl:EntryFirstImage size="o" class="featured" with_category="1"}}&lt;/a&gt;
+
+          &lt;div class="featured-post" role="article"&gt;
+            &lt;h2 class="post-title"&gt;&lt;a href="{{tpl:EntryURL}}"&gt;{{tpl:EntryTitle encode_html="1"}}&lt;/a&gt;&lt;/h2&gt;
+
+            &lt;!-- # Entry --&gt;
+            &lt;p class="post-content"&gt;{{tpl:EntryContent encode_html="1" remove_html="1" full="1" cut_string="120"}}&lt;span class="readmore-ellipsis"&gt;...&lt;/span&gt;&lt;/p&gt;
+            &lt;p class="read-it right"&gt;&lt;a href="{{tpl:EntryURL}}" title="{{tpl:lang Continue reading}} {{tpl:EntryTitle encode_html="1"}}"&gt;{{tpl:lang Continue reading}}&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/tpl:Entries&gt;
+      &lt;/div&gt;&lt;!-- End #slider --&gt;
+      </code>
+    </p>
+  </body>
+</html>

@@ -1,8 +1,8 @@
 # chestnut
 thème d'Azork
 
-Le thème est compatible avec [Gravatar] (http://fr.gravatar.com/) pour personnaliser votre avatar.  
-L'auteur d'un billet peut afficher une image personnalisée (avatar ou autres) en bas de page. Pour cela, il suffit d'ajouter une image au format jpg à la racine du dossier public de votre blog. Le nom de l'image jpg doit être identique au nom de l'auteur qui a posté le billet (ex: si votre pseudo est Toto comme auteur, alors le nom de l'image sera Toto.jpg).  
+Le thème est compatible avec [Gravatar] (http://fr.gravatar.com/) pour personnaliser votre avatar.
+L'auteur d'un billet peut afficher une image personnalisée (avatar ou autres) en bas de page. Pour cela, il suffit d'ajouter une image au format jpg à la racine du dossier public de votre blog. Le nom de l'image jpg doit être identique au nom de l'auteur qui a posté le billet (ex: si votre pseudo est Toto comme auteur, alors le nom de l'image sera Toto.jpg).
 Les widgets du volet supplémentaire sont intégrés au footer.
 
 
@@ -14,18 +14,14 @@ Depuis "Personnaliser le thème", il est possible de choisir :
 
 Le slide
 --------
-<<<<<<< HEAD
 Le slide permet d'afficher l'image, le titre et les 120 premiers caractères du billet.
-=======
-Le slide permet d'afficher l'image, le titre et les 120 premiers caractères du billet.  
->>>>>>> origin/master
 Il est positionné sous la barre de menu, la liste des billets sera en-dessous et la sidebar à leur droite.
 
 Deux choix possibles :
 * Pas de slide
 * Slide
 
-Par défaut, le slide s'appuie sur les 3 derniers billets sélectionnés. Vous pouvez cependant l'utiliser pour afficher les billets d'une catégorie ou d'un tag.  
+Par défaut, le slide s'appuie sur les 3 derniers billets sélectionnés. Vous pouvez cependant l'utiliser pour afficher les billets d'une catégorie ou d'un tag.
 Pour une catégorie précise on mettra à la place de ```<tpl:Entries selected="1" lastn="3" ignore_pagination="1" no_context="1">``` ceci ```<tpl:Entries category="Url-de-votre-categorie" lastn="3" ignore_pagination="1" no_context="1">```.
 Et pour un mot-clé précis, cela ```<tpl:Entries tag="Nom du tag" lastn="3" ignore_pagination="1" no_context="1">```.
 
