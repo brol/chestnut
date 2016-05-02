@@ -1,6 +1,6 @@
 # Language: Français
 # Module: chestnut - 1.2
-# Date: 2016-04-07 13:07:31
+# Date: 2016-05-02 16:28:31
 # Translated with translater 2015.03.02
 
 msgid ""
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: chestnut 1.2\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2016-04-07T13:07:31+00:00\n"
+"PO-Revision-Date: 2016-05-02T16:28:31+00:00\n"
 "Last-Translator: brol\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -44,8 +44,8 @@ msgid "No slide"
 msgstr "Pas de slide"
 
 #: _config.php:147
-msgid "The title and the text (limited to the first 120 characters of the ticket) appears at the right of the image."
-msgstr "Le titre ainsi que le texte (limité aux 120 premiers caractères du billet) s'affiche à droite de l'image."
+msgid "The title and the text (limited to the first 120 characters of the ticket) appear at the right of the image."
+msgstr "Le titre ainsi que le texte (limité aux 120 premiers caractères du billet) s'affichent à droite de l'image."
 
 #: _config.php:150
 msgid "Code:"

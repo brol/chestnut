@@ -21,6 +21,7 @@
   height: 30px;
   background: transparent url("../img/categoriesBG.png") no-repeat top left;
   position: relative;
+  left:26px;
 }
 
 #menu li {

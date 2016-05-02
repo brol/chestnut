@@ -13,10 +13,11 @@
   <small id="description">{{tpl:BlogDescription encode_html="1"}}</small>
 
   <form method="get" action="{{tpl:BlogURL}}" id="topsearch">
-    <fieldset>
+    <p>
     <input type="text" value="{{tpl:lang Search}}..." name="q" id="query" maxlength="255" size="10"
     onfocus="if(this.value=='{{tpl:lang Search}}...') {this.value=''};" onblur="if(this.value=='') {this.value='{{tpl:lang Search}}...'};" />
-    </fieldset>
+    <input type="submit" value="ok" class="submit" />
+    </p>
   </form>
 
   <tpl:Categories level="1">

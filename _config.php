@@ -149,11 +149,11 @@ echo
 		__('Slide').
 	'</label>'.
 '</p>'.
-'<p class="info">'.__('The title and the text (limited to the first 120 characters of the ticket) appears at the right of the image.').'</p>';
+'<p class="info">'.__('The title and the text (limited to the first 120 characters of the ticket) appear at the right of the image.').'</p>';
 
 echo
 '<p class="area"><label for="slide1">'.__('Code:').' '.
-form::textarea('slide1',60,20,html::escapeHTML($html_contentslide[1])).'</label></p>';
+form::textarea('slide1',60,16,html::escapeHTML($html_contentslide[1])).'</label></p>';
 
 # Slide on the following pages
 echo

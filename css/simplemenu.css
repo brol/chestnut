@@ -21,6 +21,7 @@
   height: 30px;
   background: transparent url("../img/categoriesBG.png") no-repeat top left;
   position: relative;
+  left:26px;
 }
 
 #navsm li {
@@ -63,4 +64,4 @@
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-#navsm li.active a:hover { background: #B88F00; }
+#navsm li.active a:hover { background: #e2dac9;color: #554c46; }
