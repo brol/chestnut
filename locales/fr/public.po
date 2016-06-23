@@ -1,14 +1,14 @@
 # Language: Français
-# Module: chestnut - 1.2
-# Date: 2016-04-07 13:07:31
+# Module: chestnut - 1.2.2
+# Date: 2016-06-23 15:04:31
 # Translated with translater 2015.03.02
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: chestnut 1.2\n"
+"Project-Id-Version: chestnut 1.2.2\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2016-04-07T13:07:31+00:00\n"
+"PO-Revision-Date: 2016-06-23T15:04:31+00:00\n"
 "Last-Translator: brol\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -58,37 +58,37 @@ msgid "Be the first to comment on this article"
 msgstr "Soyez le premier à réagir sur cet article"
 
 #: tpl/page.html:16
-#: tpl/post.html:60
+#: tpl/post.html:57
 msgid "Posted"
 msgstr "Publié"
 
 #: tpl/page.html:18
-#: tpl/post.html:62
+#: tpl/post.html:59
 msgid "updated on"
 msgstr "modifié le"
 
 #: tpl/page.html:28
-#: tpl/post.html:72
+#: tpl/post.html:69
 msgid "Article"
 msgstr "Article"
 
 #: tpl/page.html:48
-#: tpl/post.html:92
+#: tpl/post.html:89
 msgid "Stay in touch with the latest news and subscribe to the"
 msgstr "Restez au courant de l'actualité et abonnez-vous au"
 
 #: tpl/page.html:49
-#: tpl/post.html:93
+#: tpl/post.html:90
 msgid "RSS Feed"
 msgstr "Flux RSS"
 
 #: tpl/page.html:50
-#: tpl/post.html:94
+#: tpl/post.html:91
 msgid "about this category"
 msgstr "de cette catégorie"
 
 #: tpl/page.html:76
-#: tpl/post.html:120
+#: tpl/post.html:117
 msgid "You might also like"
 msgstr "À voir également"
 
@@ -123,3 +123,6 @@ msgstr "suiv"
 
 msgid "prev"
 msgstr "préc"
+
+msgid "Author:"
+msgstr "Auteur :"

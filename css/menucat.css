@@ -15,13 +15,24 @@
 
 #menu {
   margin-top: 100px;
-  width: 960px;
+  width: 956px;
   list-style: none;
   padding: 2px 2px 0 2px;
-  height: 30px;
-  background: transparent url("../img/categoriesBG.png") no-repeat top left;
+  height: 26px;
   position: relative;
   left:26px;
+  border-bottom: 1px solid #d9d9d9;
+  background: #edeae3; /* Old browsers */
+  background: -moz-linear-gradient(top,  #edeae3 0%, #f6f4ee 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #edeae3 0%,#f6f4ee 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #edeae3 0%,#f6f4ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeae3', endColorstr='#f6f4ee',GradientType=0 ); /* IE6-9 */
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 #menu li {

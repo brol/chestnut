@@ -309,12 +309,23 @@ h3 { color: #554C46; }
 #sidebar h2 {
   font-size: 14px;
   font-weight: 700;
-  margin: 0;
+  margin: 0 0 15px 0;
   padding: 8px 0 0 10px;
-  height: 38px;
+  height: 23px;
   color: #554c46;
-  background: url("img/h2BG.png") no-repeat top left;
   position: relative;
+  border-bottom: 1px solid #d9d9d9;
+  background: #edeae3; /* Old browsers */
+  background: -moz-linear-gradient(top,  #edeae3 0%, #f6f4ee 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #edeae3 0%,#f6f4ee 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #edeae3 0%,#f6f4ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeae3', endColorstr='#f6f4ee',GradientType=0 ); /* IE6-9 */
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 #sidebar .archive-bt a {
@@ -426,7 +437,7 @@ h3 { color: #554C46; }
 
 #sidebar li.category-current > a { font-weight: 700; }
 
-#sidebar .avatar { margin: 0 10px 10px 0 !important; }
+#sidebar .avatar { margin: 0 10px /*10px*/ 0 0 !important; }
 
 #q {
   border: 1px solid #bfbfbf;
@@ -1463,3 +1474,5 @@ ul.tags li {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
+/* plugins */
+#sidebar .weatherplus img {border:none;padding:0;background:none;}
