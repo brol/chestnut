@@ -1,0 +1,30 @@
+/*
+# -- BEGIN LICENSE BLOCK ---------------------------------------
+#
+# This file is part of Chestnut, a Dotclear 2 theme.
+#
+# Copyright (c) 2011 Azork - http://xtradotfreedotfr.free.fr
+# Contributor: Pierre Van Glabeke - https://github.com/brol/chestnut
+# Licensed under the GPL version 2.0 license.
+# See LICENSE file or
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
+# -- END LICENSE BLOCK -----------------------------------------
+*/
+#page {width: 98%;}
+#footer {width: 100%;}
+#nav, #menu, #navsm {width: 95.2%; margin: 100px auto 0;}
+#wrapper {width: 95.2%;}
+#main {width: 71%;}
+#sidebar {width: 27%;}
+#slider {width: 99.8%;}
+#slider .slider-container {width: 100%;}
+#content img {max-width: 98.5%;}
+#content table {width: 100%;}
+.dc-home #content .post {width: 48.8%;}
+.dc-post .post-related .post, .dc-page .post-related .post {width: 47.5%;}
+#comment-form #c_namemail input#c_name,
+#comment-form #c_namemail input#c_mail,
+#comment-form #c_namemail input#c_site {width: 95.2%;}
+#comment-form textarea {width: 97.5%;}
+#custom div {width: 23%;}

@@ -38,7 +38,7 @@
       <form method="get" action="{{tpl:BlogArchiveURL}}" id="archives">
         <fieldset>
           <label for="archives">{{tpl:lang Sort}} {{tpl:lang by}}</label>
-          <select name="archives" onchange="location = this.options[this.selectedIndex].value;"><option value="">Date --------</option>
+          <select name="archives" onchange="location = this.options[this.selectedIndex].value;"><option value="">{{tpl:lang Date --------}}</option>
       </tpl:ArchivesHeader>
       <tpl:ArchivesYearHeader><optgroup label="{{tpl:ArchiveDate format="%Y"}}"></tpl:ArchivesYearHeader>
         <option value="{{tpl:ArchiveURL}}">
@@ -65,7 +65,7 @@
       <table>
         <tr>
           <th class="th-entry">{{tpl:lang Title}}</th>
-          <th class="th-date">Date</th>
+          <th class="th-date">{{tpl:lang Date}}</th>
           <th class="th-author">{{tpl:lang Author}}</th>
         </tr>
     </tpl:EntriesHeader>

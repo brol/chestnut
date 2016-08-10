@@ -30,6 +30,16 @@ function chestnutPublicHeadContent($core)
 
 	$theme_url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
 	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$theme_url."/css/".$style.".css\" />\n";
+	
+	
+    # appel css width
+	$style = $core->blog->settings->themes->chestnut_width;
+	if (!preg_match('/^pixel|percentage$/',$style)) {
+		$style = 'pixel';
+	}
+
+	$theme_url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
+	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$theme_url."/css/".$style.".css\" />\n";
 
 
     # appel css slide1/slide2 ou aucun

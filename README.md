@@ -8,6 +8,7 @@ Les widgets du volet supplémentaire sont intégrés au footer.
 
 Depuis "Personnaliser le thème", il est possible de choisir :
 * le type de menu à afficher (Menu des catégories (css/menucat.css) ou Simplemenu (pas de niveau, css/simplemenu.css) ou [Menu] (http://plugins.dotaddict.org/dc2/details/menu) (possibilité de niveaux sous forme verticale, css/menu.css) ou aucun menu)
+* la largeur de page (pixel = 1011px / pourcentage = 98%)
 * d'afficher ou non en page d'accueil le slide
 * d'afficher ou non le slide dans les pages suivantes de la page d'accueil.
 

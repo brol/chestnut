@@ -18,11 +18,9 @@
   clear: both;
 	z-index:85;
   margin-top: 100px;
-  width: 956px;
   padding: 2px 2px 0 2px;
   height: 26px;
   position: relative;
-  left:26px;
   border-bottom: 1px solid #d9d9d9;
   background: #edeae3; /* Old browsers */
   background: -moz-linear-gradient(top,  #edeae3 0%, #f6f4ee 100%); /* FF3.6-15 */

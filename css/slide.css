@@ -14,7 +14,7 @@
 #slider {
   height: 233px;
   position: relative;
-  width: 618px;
+  /*width: 618px;*/
   overflow: hidden;
   margin-bottom: 1.5em;
   border: 1px solid #ccc;
@@ -23,7 +23,7 @@
 #slider .slider-container {
   float: left;
   display: inline;
-  width: 618px;
+  /*width: 618px;*/
 }
 #slider .slider-container .image-container {
   overflow: hidden;

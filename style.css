@@ -140,7 +140,6 @@ h3 { color: #554C46; }
 #page {
   overflow: hidden;
   margin: 0 auto;
-  width: 1011px;
   background: #fff;
   box-shadow: 0 0 10px #222;
 }
@@ -154,7 +153,6 @@ h3 { color: #554C46; }
 }
 
 #wrapper {
-  width: 960px;
   overflow: hidden;
   margin: 0 auto;
   padding: 20px 0;
@@ -162,7 +160,6 @@ h3 { color: #554C46; }
 }
 
 #main {
-  width: 620px;
   float: left;
   padding: 0 10px 0 0;
 }
@@ -173,14 +170,12 @@ h3 { color: #554C46; }
 }
 
 #sidebar {
-  width: 320px;
   float: right;
   padding: 0 0 0 10px;
 }
 
 #footer {
   clear: both;
-  width: 1011px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -193,14 +188,11 @@ h3 { color: #554C46; }
   height: 200px;
   padding: 0 10px;
   margin: 0 auto;
-  /*min-height: 200px;
-  width: 960px;*/
 }
 
 #legal {
   padding: 10px 28px;
   overflow: hidden;
-  width: 955px;
   margin: 0 auto;
   background: #4d443d;
   font-size: 10px;
@@ -771,7 +763,6 @@ ul.tags li {
 #content img {
   padding: 4px;
   border: 1px solid #CCCCCC;
-  max-width: 610px;
 }
 
 #content .smiley {
@@ -784,7 +775,6 @@ ul.tags li {
 
 #content table {
   margin: 1.5em 0;
-  width: 610px;
   border-collapse: collapse;
   background: #f6f3ee;
   color: #554C46;
@@ -909,7 +899,6 @@ ul.tags li {
   margin: 0;
 }
 .dc-home #content .post {
-  width: 300px;
   display: inline;
   float: left;
 }
@@ -950,12 +939,11 @@ ul.tags li {
 
 .dc-post .post-related h2 { font-size: 2em; margin: 0 0 10px 0; line-height: 27px; }
 .dc-post .post-related .post {
-  width: 295px;
   display: inline;
   float: left;
   margin: 0;
 }
-.dc-post .post-related .even { margin-left: 30px; }
+.dc-post .post-related .even { margin-left: 30px; float: right; }
 .dc-post .post-related img.left { margin-right: 10px; margin-bottom: 15px; }
 .dc-post .post-related img.right { margin-left: 10px; margin-bottom: 15px; }
 
@@ -986,13 +974,12 @@ ul.tags li {
 .dc-page .post-related h2 { font-size: 2em; margin: 0 0 10px 0; line-height: 27px; }
 .dc-page .post-info { font-size: 10px; }
 .dc-page .post-related .post {
-  width: 295px;
   display: inline;
   float: left;
   margin: 0;
 }
 
-.dc-page .post-related .even { margin-left: 30px; }
+.dc-page .post-related .even { margin-left: 30px; float: right; }
 .dc-page .post-related img.left { margin-right: 10px; margin-bottom: 15px; }
 .dc-page .post-related img.right { margin-left: 10px; margin-bottom: 15px; }
 
@@ -1005,7 +992,6 @@ ul.tags li {
   float: right;
   text-align: right;
   margin-top: 0;
-  margin-right: 10px;
 }
 
 .dc-archive #content-info form select,
@@ -1194,7 +1180,6 @@ ul.tags li {
 }
 
 #comment-form p.form-help {
-  /*width: 60%;*/
   margin: 0;
   font-style: italic;
 }
@@ -1206,7 +1191,7 @@ ul.tags li {
 #comment-form #c_namemail input#c_name,
 #comment-form #c_namemail input#c_mail,
 #comment-form #c_namemail input#c_site {
-  width: 264px;
+  width: 95.2%;
 }
 
 #comment-form p label { width: auto; }
@@ -1231,7 +1216,7 @@ ul.tags li {
   color: #555;
 }
 
-#comment-form textarea { width: 564px; }
+#comment-form textarea {}
 
 #comment-form .buttons {
   position: relative;
@@ -1287,12 +1272,10 @@ ul.tags li {
 #custom div {
   display: inline;
   float: left;
-  width: 225px;
   margin: 20px 0 0 0;
   height: auto !important;
   height: 100px;
   padding: 15px 5px 30px 15px;
-  /*min-height: 100px;*/
 }
 
 #custom div > * {
@@ -1382,7 +1365,6 @@ ul.tags li {
 #custom img {
   padding: 4px;
   border: 1px solid #4d443d;
-  /*background: #e2dac9;*/
   max-width:95%;
 }
 /* Twitter / Facebook
@@ -1407,8 +1389,16 @@ ul.tags li {
   margin: 0 0 10px 0;
   width: 100%;
   height: 30px;
-  background: transparent url(img/ui-tabs-nav.png) no-repeat bottom left;
   color: #999;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eeeeee+100 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .ui-tabs-nav a {

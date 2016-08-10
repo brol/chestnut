@@ -27,11 +27,13 @@ l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/main');
 
 # Default values
 $default_menu = 'menucat';
+$default_width = 'pixel';
 $default_slidenav = 'yesslidenav';
 $default_slide = 0;
 
 # Settings
 $my_menu = $core->blog->settings->themes->chestnut_menu;
+$my_width = $core->blog->settings->themes->chestnut_width;
 $my_slidenav = $core->blog->settings->themes->chestnut_slidenav;
 $my_slide = $core->blog->settings->themes->chestnut_slide;
 
@@ -41,6 +43,12 @@ $chestnut_menu_combo = array(
 	__('simpleMenu') => 'simplemenu',
 	__('Menu') => 'menu',
 	__('none') => 'menuno'
+);
+
+# Width type
+$chestnut_width_combo = array(
+	__('Pixel') => 'pixel',
+	__('Percentage') => 'percentage'
 );
 
 $html_fileslide = array(); $html_contentslide = array();
@@ -80,6 +88,18 @@ if (!empty($_POST))
 
 		}
 		$core->blog->settings->themes->put('chestnut_menu',$my_menu,'string','Menu to display',true);
+
+		# Width type
+		if (!empty($_POST['chestnut_width']) && in_array($_POST['chestnut_width'],$chestnut_width_combo))
+		{
+			$my_width = $_POST['chestnut_width'];
+
+		} elseif (empty($_POST['chestnut_width']))
+		{
+			$my_width = $default_width;
+
+		}
+		$core->blog->settings->themes->put('chestnut_width',$my_width,'string','Width to display',true);
 
 		# Slide scheme
 		if (!empty($_POST['chestnut_slide']) && ($_POST['chestnut_slide']==1 || $_POST['chestnut_slide']==2))
@@ -132,6 +152,14 @@ echo
 form::combo('chestnut_menu',$chestnut_menu_combo,$my_menu).
 '</p>'.
 '<p class="info">'.__('Plugins menu allowed: <a href="http://plugins.dotaddict.org/dc2/details/menu">Menu</a> plugin or simpleMenu.').'</p>'.
+'</div>';
+
+# Width
+echo
+'<div class="fieldset"><h4>'.__('Width').'</h4>'.
+'<p class="field"><label>'.__('Width to display:').'</label>'.
+form::combo('chestnut_width',$chestnut_width_combo,$my_width).
+'</p>'.
 '</div>';
 
 # Slide

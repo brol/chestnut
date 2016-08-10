@@ -1,65 +1,82 @@
 # Language: Français
-# Module: chestnut - 1.2.2
-# Date: 2016-06-23 15:04:31
-# Translated with translater 2015.03.02
+# Module: chestnut - 1.3.1
+# Date: 2016-08-10 13:35:01
+# Translated with translater 2016.07.08
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: chestnut 1.2.2\n"
+"Project-Id-Version: chestnut 1.3.1\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2016-06-23T15:04:31+00:00\n"
+"PO-Revision-Date: 2016-08-10T13:35:01+00:00\n"
 "Last-Translator: brol\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: _config.php:40
+#: _config.php:42
 msgid "Menu categories"
 msgstr "Menu des catégories"
 
-#: _config.php:43
+#: _config.php:45
 msgid "none"
 msgstr "aucun"
 
-#: _config.php:52
+#: _config.php:50
+msgid "Pixel"
+msgstr "Pixel"
+
+#: _config.php:51
+msgid "Percentage"
+msgstr "Pourcentage"
+
+#: _config.php:60
 msgid "File %s does not exist and directory %s is not writable."
 msgstr "Le fichier %s n'existe pas et le répertoire %s n'est pas accessible en écriture."
 
-#: _config.php:61
+#: _config.php:69
 msgid "No"
 msgstr "Non"
 
-#: _config.php:131
+#: _config.php:151
 msgid "Menu to display:"
 msgstr "Menu à afficher :"
 
-#: _config.php:134
+#: _config.php:154
 msgid "Plugins menu allowed: <a href=\"http://plugins.dotaddict.org/dc2/details/menu\">Menu</a> plugin or simpleMenu."
 msgstr "Plugins menu acceptés : <a href=\"http://plugins.dotaddict.org/dc2/details/menu\">Menu</a> ou simpleMenu."
 
-#: _config.php:139
-#: _config.php:149
+#: _config.php:160
+msgid "Width to display:"
+msgstr "Largeur à afficher :"
+
+#: _config.php:167
+#: _config.php:177
 msgid "Slide"
 msgstr "Slide"
 
-#: _config.php:143
+#: _config.php:171
 msgid "No slide"
 msgstr "Pas de slide"
 
-#: _config.php:152
+#: _config.php:180
 msgid "The title and the text (limited to the first 120 characters of the ticket) appear at the right of the image."
 msgstr "Le titre ainsi que le texte (limité aux 120 premiers caractères du billet) s'affichent à droite de l'image."
 
-#: _config.php:155
+#: _config.php:183
 msgid "Code:"
 msgstr "Code :"
 
-#: _config.php:160
+#: _config.php:188
 msgid "Display on the following pages:"
 msgstr "Afficher sur les pages suivantes :"
 
 #: tpl/_footer.html:7
 msgid "and"
 msgstr "et"
+
+#: tpl/archive.html:31
+#: tpl/archive_month.html:41
+msgid "Date --------"
+msgstr "Date --------"
 
