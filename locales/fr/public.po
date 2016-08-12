@@ -1,12 +1,12 @@
 # Language: Français
-# Module: chestnut - 1.3.1
+# Module: chestnut - 1.3.2
 # Date: 2016-08-10 13:35:01
 # Translated with translater 2016.07.08
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: chestnut 1.3.1\n"
+"Project-Id-Version: chestnut 1.3.2\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2016-08-10T13:35:01+00:00\n"
 "Last-Translator: brol\n"
@@ -22,6 +22,10 @@ msgstr "Thème"
 msgid "Design by"
 msgstr "Design par"
 
+#: tpl/_footer.html:7
+msgid "and"
+msgstr "et"
+
 #: tpl/_footer.html:8
 msgid "Last site update"
 msgstr "Dernière mise à jour"
@@ -32,9 +36,32 @@ msgstr "Dernière mise à jour"
 msgid "Sort"
 msgstr "Trier"
 
+#: tpl/archive.html:31
+#: tpl/archive_month.html:41
+msgid "Date --------"
+msgstr "Date --------"
+
 #: tpl/archive.html:45
 msgid "category"
 msgstr "catégorie"
+
+#: tpl/archive.html:66
+#: tpl/archive_month.html:67
+#: tpl/tags.html:59
+msgid "Title"
+msgstr "Titre"
+
+#: tpl/archive.html:67
+#: tpl/archive_month.html:68
+#: tpl/tags.html:60
+msgid "Date"
+msgstr "Date"
+
+#: tpl/archive.html:68
+#: tpl/archive_month.html:69
+#: tpl/tags.html:61
+msgid "Author"
+msgstr "Auteur"
 
 #: tpl/archive.html:76
 #: tpl/tags.html:69

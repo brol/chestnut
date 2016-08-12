@@ -1,12 +1,12 @@
 # Language: Français
-# Module: chestnut - 1.3.1
+# Module: chestnut - 1.3.2
 # Date: 2016-08-10 13:35:01
 # Translated with translater 2016.07.08
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: chestnut 1.3.1\n"
+"Project-Id-Version: chestnut 1.3.2\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2016-08-10T13:35:01+00:00\n"
 "Last-Translator: brol\n"
@@ -23,12 +23,12 @@ msgid "none"
 msgstr "aucun"
 
 #: _config.php:50
-msgid "Pixel"
-msgstr "Pixel"
+msgid "Fixed"
+msgstr "Fixe"
 
 #: _config.php:51
-msgid "Percentage"
-msgstr "Pourcentage"
+msgid "Fluid"
+msgstr "Fluide"
 
 #: _config.php:60
 msgid "File %s does not exist and directory %s is not writable."
@@ -70,13 +70,4 @@ msgstr "Code :"
 #: _config.php:188
 msgid "Display on the following pages:"
 msgstr "Afficher sur les pages suivantes :"
-
-#: tpl/_footer.html:7
-msgid "and"
-msgstr "et"
-
-#: tpl/archive.html:31
-#: tpl/archive_month.html:41
-msgid "Date --------"
-msgstr "Date --------"
 

@@ -186,7 +186,7 @@ h3 { color: #554C46; }
   overflow: hidden;
   height: auto !important;
   height: 200px;
-  padding: 0 10px;
+  padding: 0 28px;
   margin: 0 auto;
 }
 
@@ -902,7 +902,7 @@ ul.tags li {
   display: inline;
   float: left;
 }
-.dc-home #content .even { margin-left: 20px; }
+.dc-home #content .even { margin-left: 20px; float:right; }
 .dc-home .category-container { overflow: hidden; padding-bottom: 10px; }
 .dc-home .category-container img { width: 120px; }
 
@@ -1275,7 +1275,7 @@ ul.tags li {
   margin: 20px 0 0 0;
   height: auto !important;
   height: 100px;
-  padding: 15px 5px 30px 15px;
+  padding: 15px 0 30px;
 }
 
 #custom div > * {

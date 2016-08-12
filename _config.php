@@ -27,7 +27,7 @@ l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/main');
 
 # Default values
 $default_menu = 'menucat';
-$default_width = 'pixel';
+$default_width = 'fixed';
 $default_slidenav = 'yesslidenav';
 $default_slide = 0;
 
@@ -47,8 +47,8 @@ $chestnut_menu_combo = array(
 
 # Width type
 $chestnut_width_combo = array(
-	__('Pixel') => 'pixel',
-	__('Percentage') => 'percentage'
+	__('Fixed') => 'fixed',
+	__('Fluid') => 'fluid'
 );
 
 $html_fileslide = array(); $html_contentslide = array();

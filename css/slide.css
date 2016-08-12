@@ -23,7 +23,6 @@
 #slider .slider-container {
   float: left;
   display: inline;
-  /*width: 618px;*/
 }
 #slider .slider-container .image-container {
   overflow: hidden;
@@ -42,7 +41,6 @@
   position: absolute;
   right: 4px;
   top: 4px;
-  background: transparent url("../img/featuredBG.png") no-repeat top left;
   width: 235px;
 	padding-left: 150px;
 }

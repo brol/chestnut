@@ -34,8 +34,8 @@ function chestnutPublicHeadContent($core)
 	
     # appel css width
 	$style = $core->blog->settings->themes->chestnut_width;
-	if (!preg_match('/^pixel|percentage$/',$style)) {
-		$style = 'pixel';
+	if (!preg_match('/^fixed|fluid$/',$style)) {
+		$style = 'fixed';
 	}
 
 	$theme_url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
@@ -49,7 +49,6 @@ function chestnutPublicHeadContent($core)
         if ($core->blog->settings->themes->chestnut_slide==1)
         {
             echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$theme_url."/css/slide.css\" />\n";
-            echo '<script type="text/javascript" src="'.$theme_url."/js/jquery.cycle.min.js\"></script>\n";
         }
 	}
 }
