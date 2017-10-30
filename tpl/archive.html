@@ -4,15 +4,7 @@
 	<title>{{tpl:lang Archives}} - {{tpl:BlogName encode_html="1"}}</title>
 </tpl:Block>
 
-<tpl:Block name="dc-entry">
-	<meta property="dc.title" lang="{{tpl:BlogLanguage}}" content="{{tpl:lang Archives}} - {{tpl:BlogName encode_html="1"}}" />
-	<meta property="dc.language" content="{{tpl:BlogLanguage}}" />
-	<meta property="dc.date" content="{{tpl:BlogUpdateDate iso8601="1"}}" />
-</tpl:Block>
-
 <tpl:Block name="head-linkrel">
-	<link rel="top" href="{{tpl:BlogURL}}" title="{{tpl:lang Home}}" />
-
 	<tpl:Archives>
 		<link rel="chapter" href="{{tpl:ArchiveURL}}" title="{{tpl:ArchiveDate encode_html="1"}}" />
 	</tpl:Archives>
@@ -27,8 +19,8 @@
 		 <tpl:ArchivesHeader>
 		 <form method="get" action="{{tpl:BlogArchiveURL}}" id="archives">
 		   <fieldset>
-			 <label for="archives">{{tpl:lang Sort}} {{tpl:lang by}}</label>
-			 <select name="archives" onchange="location = this.options[this.selectedIndex].value;"><option value="" selected="selected">{{tpl:lang Date --------}}</option>
+			 <label for="archive">{{tpl:lang Sort}} {{tpl:lang by}}</label>
+			 <select id="archive" name="archive" onchange="location = this.options[this.selectedIndex].value;"><option value="" selected="selected">{{tpl:lang date}}</option>
 			 </tpl:ArchivesHeader>
 			 <tpl:ArchivesYearHeader><optgroup label="{{tpl:ArchiveDate format="%Y"}}"></tpl:ArchivesYearHeader>
 			   <option value="{{tpl:ArchiveURL}}">

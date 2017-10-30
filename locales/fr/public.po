@@ -1,18 +1,31 @@
 # Language: Français
-# Module: chestnut - 1.3.2
-# Date: 2016-08-10 13:35:01
-# Translated with translater 2016.07.08
+# Module: chestnut - 1.3.3
+# Date: 2017-10-30 22:31:46
+# Translated with translater 2017.05.10
 
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
-"Project-Id-Version: chestnut 1.3.2\n"
+"Project-Id-Version: chestnut 1.3.3\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2016-08-10T13:35:01+00:00\n"
+"PO-Revision-Date: 2017-10-30T22:31:46+00:00\n"
 "Last-Translator: brol\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: tpl/_attachment.html:3
+msgid "No attachment"
+msgstr "Aucune annexe"
+
+#: tpl/_comment.html:3
+msgid "Comments are closed"
+msgstr "Les commentaires sont fermés"
+
+#: tpl/_comment.html:8
+msgid "Be the first to comment on this article"
+msgstr "Soyez le premier à réagir sur cet article"
 
 #: tpl/_footer.html:7
 msgid "Theme"
@@ -30,114 +43,90 @@ msgstr "et"
 msgid "Last site update"
 msgstr "Dernière mise à jour"
 
-#: tpl/archive.html:30
-#: tpl/archive_month.html:40
-#: tpl/tags.html:31
-msgid "Sort"
-msgstr "Trier"
-
-#: tpl/archive.html:31
-#: tpl/archive_month.html:41
-msgid "Date --------"
-msgstr "Date --------"
-
-#: tpl/archive.html:45
-msgid "category"
-msgstr "catégorie"
-
-#: tpl/archive.html:66
-#: tpl/archive_month.html:67
-#: tpl/tags.html:59
-msgid "Title"
-msgstr "Titre"
-
-#: tpl/archive.html:67
-#: tpl/archive_month.html:68
-#: tpl/tags.html:60
-msgid "Date"
-msgstr "Date"
-
-#: tpl/archive.html:68
-#: tpl/archive_month.html:69
-#: tpl/tags.html:61
-msgid "Author"
-msgstr "Auteur"
-
-#: tpl/archive.html:76
-#: tpl/tags.html:69
-msgid "View all"
-msgstr "Voir tout"
-
-#: tpl/attachment.html:3
-msgid "No attachment"
-msgstr "Aucune annexe"
-
-#: tpl/category.html:68
-msgid "Subcategories:"
-msgstr "Sous-catégories :"
-
-#: tpl/comment.html:3
-msgid "Comments are closed"
-msgstr "Les commentaires sont fermés"
-
-#: tpl/comment.html:8
-msgid "Be the first to comment on this article"
-msgstr "Soyez le premier à réagir sur cet article"
-
-#: tpl/page.html:16
-#: tpl/post.html:57
-msgid "Posted"
-msgstr "Publié"
-
-#: tpl/page.html:18
-#: tpl/post.html:59
-msgid "updated on"
-msgstr "modifié le"
-
-#: tpl/page.html:28
-#: tpl/post.html:69
-msgid "Article"
-msgstr "Article"
-
-#: tpl/page.html:48
-#: tpl/post.html:89
-msgid "Stay in touch with the latest news and subscribe to the"
-msgstr "Restez au courant de l'actualité et abonnez-vous au"
-
-#: tpl/page.html:49
-#: tpl/post.html:90
-msgid "RSS Feed"
-msgstr "Flux RSS"
-
-#: tpl/page.html:50
-#: tpl/post.html:91
-msgid "about this category"
-msgstr "de cette catégorie"
-
-#: tpl/page.html:76
-#: tpl/post.html:117
-msgid "You might also like"
-msgstr "À voir également"
-
-#: tpl/sidebar.html:7
+#: tpl/_sidebar.html:7
 msgid "Recent articles"
 msgstr "Articles récents"
 
-#: tpl/sidebar.html:45
+#: tpl/_sidebar.html:45
 msgid "Recent comments"
 msgstr "Vos réactions"
 
-#: tpl/sidebar.html:50
+#: tpl/_sidebar.html:50
 msgid "said:"
 msgstr "a écrit :"
 
-#: tpl/sidebar.html:52
+#: tpl/_sidebar.html:52
 msgid "Read this article"
 msgstr "Voir l'article"
 
-#: tpl/sidebar.html:73
+#: tpl/_sidebar.html:73
 msgid "Source:"
 msgstr "Source :"
+
+#: tpl/archive.html:22
+#: tpl/archive_month.html:32
+msgid "Sort"
+msgstr "Trier"
+
+#: tpl/archive.html:23
+#: tpl/archive_month.html:33
+msgid "date"
+msgstr "date"
+
+#: tpl/archive.html:37
+msgid "category"
+msgstr "catégorie"
+
+#: tpl/archive.html:68
+#: tpl/tags.html:62
+msgid "View all"
+msgstr "Voir tout"
+
+#: tpl/category.html:60
+msgid "Subcategories:"
+msgstr "Sous-catégories :"
+
+#: tpl/page.html:15
+#: tpl/post.html:62
+msgid "Posted"
+msgstr "Publié"
+
+#: tpl/page.html:17
+#: tpl/post.html:64
+msgid "updated on"
+msgstr "modifié le"
+
+#: tpl/page.html:27
+#: tpl/post.html:74
+msgid "Article"
+msgstr "Article"
+
+#: tpl/page.html:47
+#: tpl/post.html:94
+msgid "Stay in touch with the latest news and subscribe to the"
+msgstr "Restez au courant de l'actualité et abonnez-vous au"
+
+#: tpl/page.html:48
+#: tpl/post.html:95
+msgid "RSS Feed"
+msgstr "Flux RSS"
+
+#: tpl/page.html:49
+#: tpl/post.html:96
+msgid "about this category"
+msgstr "de cette catégorie"
+
+#: tpl/page.html:69
+#: tpl/post.html:122
+msgid "You might also like"
+msgstr "À voir également"
+
+#: tpl/tags.html:24
+msgid "Select a tag"
+msgstr "Choisir un mot-clé"
+
+msgid "Select a date"
+msgstr "Choisir une date"
 
 msgid "of the site"
 msgstr "du site"

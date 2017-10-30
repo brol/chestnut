@@ -10,16 +10,7 @@
 	<meta name="date" content="{{tpl:EntryDate iso8601="1"}}" />
 </tpl:Block>
 
-<tpl:Block name="dc-entry">
-	<meta property="dc.title" content="{{tpl:EntryTitle encode_html="1"}}" />
-	<meta property="dc.description" lang="{{tpl:EntryLang}}" content="{{tpl:EntryContent full="1" encode_html="1" remove_html="1" cut_string="180"}}" />
-	<meta property="dc.creator" content="{{tpl:EntryAuthorCommonName encode_html="1"}}" />
-	<meta property="dc.language" content="{{tpl:EntryLang}}" />
-	<meta property="dc.date" content="{{tpl:EntryDate iso8601="1"}}" />
-</tpl:Block>
-
 <tpl:Block name="head-linkrel">
-	<link rel="top" href="{{tpl:BlogURL}}" title="{{tpl:lang Home}}" />
 	<link rel="contents" href="{{tpl:BlogArchiveURL}}" title="{{tpl:lang Archives}}" />
 	<tpl:EntryIf pings_active="1"><link rel="pingback" href="{{tpl:BlogXMLRPCURL}}" /></tpl:EntryIf>
 
@@ -34,13 +25,27 @@
 
 <tpl:Block name="html-head">
 	{{tpl:parent}}
+  <script type="text/javascript" src="{{tpl:BlogQmarkURL}}pf=post.js"></script>
 
-	<script type="text/javascript" src="{{tpl:BlogQmarkURL}}pf=post.js"></script>
-	<script type="text/javascript">
-		//<![CDATA[
-		var post_remember_str = '{{tpl:lang Remember me on this blog}}';
-		//]]>
-	</script>
+  <script type="text/javascript">
+  //<![CDATA[
+  var post_remember_str = '{{tpl:lang Remember me on this blog}}';
+  $(function() {
+	$("#tabs").tabs({ fx: { opacity: 'toggle' } });
+	if(document.location.hash!='') {
+			tabSelect = document.location.hash.substr(1,document.location.hash.length);
+			if(tabSelect.match(/^c[1-9]/) != null) {
+			  $("#tabs").tabs('select','#comment');
+			  $("#tabs").bind("tabsshow", function(event, ui) {
+			    var $target = $(document.location.hash);
+			    var targetOffset = $target.offset().top;
+				$("html,body").animate({scrollTop: targetOffset}, 1000);
+			  });
+			}
+	}
+  });
+  //]]>
+  </script>
 </tpl:Block>
 
 <tpl:Block name="body-tag"><body class="dc-post"></tpl:Block>
@@ -101,11 +106,11 @@
       </div><!-- End #article -->
 
       <div id="comment">
-        {{tpl:include src="comment.html"}}
+        {{tpl:include src="_comment.html"}}
       </div><!-- End #comments -->
 
       <div id="media">
-        {{tpl:include src="attachment.html"}}
+        {{tpl:include src="_attachment.html"}}
       </div><!-- End #medias -->
 
     </div><!-- End #tabs -->

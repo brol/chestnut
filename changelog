@@ -1,5 +1,9 @@
-v1.3.3 - 12/08/2016 - Pierre Van Glabeke
+v1.3.3 - 30/10/2017 - Pierre Van Glabeke
 * bug prévisualisation des commentaires
+* modifs html
+* modifs localisation
+* dc2.12 requis
+* version dc2 jquery : 2.2.4
 
 v1.3.2 - 11/08/2016 - Pierre Van Glabeke
 * modifs css

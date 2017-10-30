@@ -37,8 +37,31 @@
 </tpl:EntryIf>
 
 <tpl:EntryIf comments_active="1">
-  <!-- # Comment form -->
-  <form action="{{tpl:EntryURL}}#pr" method="post" id="comment-form" role="form">
+    <tpl:SysIfFormError>
+        <p class="error" id="pr">{{tpl:SysFormError}}</p>
+    </tpl:SysIfFormError>
+
+    <tpl:SysIfCommentPublished>
+        <p class="message" id="pr">{{tpl:lang Your comment has been published.}}</p>
+    </tpl:SysIfCommentPublished>
+
+    <tpl:SysIfCommentPending>
+        <p class="message" id="pr">{{tpl:lang Your comment has been submitted and
+    will be reviewed for publication.}}</p>
+    </tpl:SysIfCommentPending>
+
+        <!-- # Comment form -->
+        <form action="{{tpl:EntryURL}}#comment" method="post" id="comment-form" role="form">
+          <tpl:IfCommentPreview>
+            <div id="pr">
+              <h3>{{tpl:lang Your comment}}</h3>
+              <dl>
+                <dd class="comment-preview">{{tpl:CommentPreviewContent}}</dd>
+              </dl>
+              <p class="buttons"><input type="submit" class="submit" value="{{tpl:lang send}}" /></p>
+            </div>
+          </tpl:IfCommentPreview>
+          
     <h3>{{tpl:lang Add a comment}}
       <tpl:EntryIf operator="or" comments_active="1" pings_active="1">
       <span class="right">
@@ -84,27 +107,7 @@
       {{tpl:SysBehavior behavior="publicCommentFormAfterContent"}}
     </fieldset>
 
-    <tpl:SysIfFormError>
-        <p class="error" id="pr">{{tpl:SysFormError}}</p>
-    </tpl:SysIfFormError>
 
-    <tpl:SysIfCommentPublished>
-        <p class="message" id="pr">{{tpl:lang Your comment has been published.}}</p>
-    </tpl:SysIfCommentPublished>
-
-    <tpl:SysIfCommentPending>
-        <p class="message" id="pr">{{tpl:lang Your comment has been submitted and
-    will be reviewed for publication.}}</p>
-    </tpl:SysIfCommentPending>
-
-    <tpl:IfCommentPreview>
-      <div id="pr">
-        <h3>{{tpl:lang Your comment}}</h3>
-        <dl>
-          <dd class="comment-preview">{{tpl:CommentPreviewContent}}</dd>
-        </dl>
-      </div>
-    </tpl:IfCommentPreview>
 
     <fieldset>
       <div class="buttons">

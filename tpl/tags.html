@@ -8,14 +8,7 @@
 	<meta name="ROBOTS" content="{{tpl:BlogMetaRobots robots="NOINDEX"}}" />
 </tpl:Block>
 
-<tpl:Block name="dc-entry">
-	<meta property="dc.title" lang="{{tpl:BlogLanguage}}" content="{{tpl:lang Tags}} - {{tpl:BlogName encode_html="1"}}" />
-	<meta property="dc.language" content="{{tpl:BlogLanguage}}" />
-	<meta property="dc.date" content="{{tpl:BlogUpdateDate iso8601="1"}}" />
-</tpl:Block>
-
 <tpl:Block name="head-linkrel">
-	<link rel="top" href="{{tpl:BlogURL}}" title="{{tpl:lang Home}}" />
 	<link rel="contents" href="{{tpl:BlogArchiveURL}}" title="{{tpl:lang Archives}}" />
 	<link rel="meta" type="application/xbel+xml" title="Blogroll" href="{{tpl:BlogrollXbelLink}}" />
 </tpl:Block>
@@ -28,9 +21,9 @@
     <tpl:TagsHeader>
       <form method="get" action="" id="tags">
         <fieldset>
-          <label for="tags">{{tpl:lang Sort}} {{tpl:lang by}}</label>
+          <label for="tags">{{tpl:lang Select a tag}}</label>
           <select name="tags" onchange="location = this.options[this.selectedIndex].value;">
-            <option value="" selected="selected">{{tpl:lang Tag}} --------</option>
+            <option value="" selected="selected"></option>
     </tpl:TagsHeader>
             <option value="{{tpl:TagURL}}">
               {{tpl:TagID lower_case="1"}}

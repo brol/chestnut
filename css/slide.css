@@ -23,6 +23,7 @@
 #slider .slider-container {
   float: left;
   display: inline;
+  background-color:#fff !important;
 }
 #slider .slider-container .image-container {
   overflow: hidden;

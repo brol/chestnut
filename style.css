@@ -521,7 +521,7 @@ ul.tags li {
 
 /* Main content styles
 -------------------------------------------------------- */
-#breadcrumb {margin:0 0 15px;padding:0 0 0 10px; font-size:1.1em;}
+#breadcrumb {margin:0 0 15px;padding:0 0 0 5px; font-size:1.1em;}
 #subcategories {
   margin: 0;
   padding: 10px 0;
@@ -1142,8 +1142,12 @@ ul.tags li {
   margin: 10px 0;
   padding: 10px 5px;
   background: #ffcccc;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   border: 2px solid red;
   font-weight: 700;
+  font-size: 1.1em;
 }
 
 .message {
@@ -1153,6 +1157,9 @@ ul.tags li {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1em;
+  color:green;
 }
 
 /* Forms
@@ -1218,6 +1225,7 @@ ul.tags li {
 
 #comment-form textarea {}
 
+#comment-form .buttons .left {padding:4px 0 0 0;}
 #comment-form .buttons {
   position: relative;
   padding: 0;
@@ -1246,7 +1254,7 @@ ul.tags li {
   background: #B57F00;
   border: none;
   margin-left: 5px;
-  padding: 6px 12px;
+  padding: 6px 12px 4px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -1448,6 +1456,7 @@ ul.tags li {
   float: left;
   clear: left;
   width: 100%;
+  font-size:1.1em;
 }
 .ui-menu .ui-menu-item a {
   text-decoration:none;
