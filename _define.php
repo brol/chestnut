@@ -16,7 +16,7 @@ $this->registerModule(
     /* Name */          "Chestnut",
     /* Description*/    "Dotclear Theme",
     /* Author */        "Azork, Pierre Van Glabeke",
-    /* Version */       '1.3.3',
+    /* Version */       '1.3.4',
 	array(
 		'type'	 =>	'theme',
 		'tplset' => 'mustek',

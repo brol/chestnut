@@ -11,7 +11,7 @@
 #
 # -- END LICENSE BLOCK -----------------------------------------
 */
-#page {width: 98%; min-width: 1011px;}
+#page {width: 98% /*1238px*/; min-width: 1011px;}
 #footer {width: 100%;}
 #nav, #menu, #navsm {width: 95.2%; margin: 100px auto 0;}
 #wrapper {width: 95.2%;}
