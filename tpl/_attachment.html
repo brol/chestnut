@@ -14,11 +14,7 @@
 					{{tpl:include src="_audio_player.html"}}
 				</tpl:AttachmentIf>
 				<tpl:AttachmentIf is_video="1">
-					<tpl:AttachmentIf is_flv="0">
-						{{tpl:include src="_video_player.html"}}
-					{{tpl:else}}
-						{{tpl:include src="_flv_player.html"}}
-					</tpl:AttachmentIf>
+					{{tpl:include src="_video_player.html"}}
 				</tpl:AttachmentIf>
         <tpl:AttachmentIf has_thumb="1">
           <img src="{{tpl:AttachmentThumbnailURL}}" alt="{{tpl:AttachmentTitle}}" />
