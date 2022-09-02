@@ -16,11 +16,7 @@
 				<tpl:AttachmentIf is_video="1">
 					{{tpl:include src="_video_player.html"}}
 				</tpl:AttachmentIf>
-        <tpl:AttachmentIf has_thumb="1">
-          <img src="{{tpl:AttachmentThumbnailURL}}" alt="{{tpl:AttachmentTitle}}" />
-          <a class="attachment-desc" href="{{tpl:AttachmentURL}}" title="{{tpl:AttachmentFileName}} ({{tpl:AttachmentSize}})">{{tpl:AttachmentTitle}}</a>
-        </tpl:AttachmentIf>
-        <tpl:AttachmentIf has_thumb="0">
+        <tpl:AttachmentIf is_audio="0" is_video="0">
           <a href="{{tpl:AttachmentURL}}" title="{{tpl:AttachmentFileName}} ({{tpl:AttachmentSize}})">{{tpl:AttachmentTitle}}</a>
         </tpl:AttachmentIf>
 			</li>
