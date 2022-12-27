@@ -10,6 +10,6 @@
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 #
 # -- END LICENSE BLOCK -----------------------------------------
-if (!isset($__resources['help']['chestnut'])) {
-	$__resources['help']['chestnut'] = dirname(__FILE__).'/help/chestnut.html';
+if (!isset(dcCore::app()->resources['help']['chestnut'])) {
+	dcCore::app()->resources['help']['chestnut'] = dirname(__FILE__).'/help/chestnut.html';
 }
