@@ -97,10 +97,10 @@ class behaviorsExcludeCurrentPost
 
 # Add a new class 'category-current' for the parent category
 # Source: http://forum.dotclear.net/viewtopic.php?id=37514
-dcCore::app()->addBehavior('templateBeforeBlock', ['tabloidBehavior','block']);
-dcCore::app()->tpl->addValue('CategoryIfCurrent', ['tabloidTpl','CategoryIfCurrent']);
 
-class tabloidBehavior
+dcCore::app()->addBehavior('templateBeforeBlock', ['chestnutBehavior','block']);
+
+class chestnutBehavior
 {
     public static function block()
     {
@@ -129,7 +129,9 @@ class tabloidBehavior
     }
 }
 
-class tabloidTpl
+dcCore::app()->tpl->addValue('CategoryIfCurrent', ['chestnutTpl','CategoryIfCurrent']);
+
+class chestnutTpl
 {
     public static function CategoryIfCurrent($attr)
     {
