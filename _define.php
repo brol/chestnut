@@ -13,13 +13,13 @@
 if (!defined('DC_RC_PATH')) { return; }
 
 $this->registerModule(
-    /* Name */          "Chestnut",
-    /* Description*/    "Dotclear Theme",
-    /* Author */        "Azork, Pierre Van Glabeke",
-    /* Version */       '1.4.1',
-	array(
-		'type'	 =>	'theme',
-		'tplset' => 'mustek',
-		'dc_min' => '2.23'
-	)
+    'Chestnut',
+    'Dotclear Theme',
+    'Azork, Pierre Van Glabeke',
+    '1.5',
+    [
+        'requires' => [['core', '2.24']],
+        'type'     => 'theme',
+        'tplset'   => 'mustek',
+    ]
 );
