@@ -104,8 +104,6 @@ class chestnutBehavior
 {
     public static function templateBeforeBlock(string $block, ArrayObject $attr): string
     {
-        
-
         if ($block == 'Categories') {
             $p = '<?php if (dcCore::app()->url->type != "home") { ' .
                 'if (dcCore::app()->ctx->exists("categories")) { ' .
@@ -123,7 +121,8 @@ class chestnutBehavior
                 '}' .
             "} ?>\n";
         }
-		return '';
+
+        return '';
     }
 }
 
