@@ -120,6 +120,8 @@ class chestnutBehavior
 
                 '}' .
             "} ?>\n";
+
+            return $p;
         }
 
         return '';
