@@ -74,7 +74,7 @@ class tplChestnut
 
 # Exclude Current Post
 # Source: http://tips.dotaddict.org/
-dcCore::app()->addBehavior('templateBeforeBlockV2', [__NAMESPACE__ . '\behaviorsExcludeCurrentPost','templateBeforeBlock']);
+dcCore::app()->addBehavior('templateBeforeBlockV2', ['behaviorsExcludeCurrentPost','templateBeforeBlock']);
 
 use ArrayObject;
 
@@ -98,16 +98,13 @@ class behaviorsExcludeCurrentPost
 # Add a new class 'category-current' for the parent category
 # Source: http://forum.dotclear.net/viewtopic.php?id=37514
 
-dcCore::app()->addBehavior('templateBeforeBlock', ['chestnutBehavior','block']);
+dcCore::app()->addBehavior('templateBeforeBlockV2', ['chestnutBehavior','templateBeforeBlock']);
 
 class chestnutBehavior
 {
-    public static function block()
+    public static function templateBeforeBlock(string $block, ArrayObject $attr): string
     {
-        $args = func_get_args();
-        array_shift($args);
-
-        if ($args[0] == 'Categories') {
+        if ($block == 'Categories') {
             $p = '<?php if (dcCore::app()->url->type != "home") { ' .
                 'if (dcCore::app()->ctx->exists("categories")) { ' .
                     'dcCore::app()->ctx->current_cat_id = dcCore::app()->ctx->categories->cat_id; ' .
@@ -123,9 +120,9 @@ class chestnutBehavior
 
                 '}' .
             "} ?>\n";
-
-            return $p;
         }
+
+        return '';
     }
 }
 
