@@ -76,8 +76,6 @@ class tplChestnut
 # Source: http://tips.dotaddict.org/
 dcCore::app()->addBehavior('templateBeforeBlockV2', ['behaviorsExcludeCurrentPost','templateBeforeBlock']);
 
-use ArrayObject;
-
 class behaviorsExcludeCurrentPost
 {
     public static function templateBeforeBlock(string $block, ArrayObject $attr): string
@@ -112,7 +110,7 @@ class chestnutBehavior
                     '$rs = dcCore::app()->blog->getCategoryParents($cat_id); ' .
                     'dcCore::app()->ctx->current_cat_parent_id = $rs->isEmpty() ? 0 : (integer) $rs->cat_id;' .
 
-                '} elseif (dcCore::app()->url->type != "home" && dcCore::app()->ctx->exists("posts")) { ' .
+                '} elseif (dcCore::app()->ctx->exists("posts" && dcCore::app()->url->type == "post")) { ' .
                     'dcCore::app()->ctx->current_cat_id = dcCore::app()->ctx->posts->cat_id; ' .
                     '$cat_id = dcCore::app()->ctx->posts->cat_id; ' .
                     '$rs = dcCore::app()->blog->getCategoryParents($cat_id); ' .
