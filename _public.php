@@ -147,8 +147,8 @@ class chestnutTpl
 
 # Check if current post has been updated
 # Source: http://forum.dotclear.net/viewtopic.php?id=44438
-dcCore::app()->tpl->addBlock('IfPostUpDate', ['IfPostUpDateTabloid','IfPostUpDate']);
-class IfPostUpDateTabloid
+dcCore::app()->tpl->addBlock('IfPostUpDate', ['IfPostUpDateChestnut','IfPostUpDate']);
+class IfPostUpDateChestnut
 {
     public static function IfPostUpDate($attr, $content)
     {
