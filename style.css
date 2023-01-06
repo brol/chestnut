@@ -25,7 +25,6 @@ a:link, a:visited {
   text-decoration: none;
   outline: none;
   -webkit-transition: color 150ms ease;
-  -moz-transition: color 150ms ease;
   transition: color 150ms ease;
 }
 a:hover {
@@ -44,7 +43,6 @@ pre {
   font-size: 12px;
 	white-space: pre;
   -webkit-box-shadow: 0px 2px 2px #dddddd;
-  -moz-box-shadow: 0px 2px 2px #dddddd;
   box-shadow: 0px 2px 2px #dddddd;
 }
 
@@ -117,7 +115,6 @@ h3 { color: #554C46; }
   background: #f9f9f9;
   width: 48px;
   height: 48px;
-  -moz-border-radius: 48px;
   border-radius: 48px;
 }
 .cat-desc {font-size:11px;width:90%;margin: 0 auto;}
@@ -232,7 +229,7 @@ h3 { color: #554C46; }
 #top h1 a {
   color: #fff;
   text-decoration: none;
-	text-shadow: 2px 2px 4px #555;
+  text-shadow: 2px 2px 4px #555;
 }
 
 #top #description {
@@ -252,7 +249,6 @@ h3 { color: #554C46; }
   box-shadow: 1px 1px 2px 0 #463e39;
   border-radius: 10px;
   -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   height: 37px;
   position: absolute;
   right: 26px;
@@ -269,7 +265,6 @@ h3 { color: #554C46; }
   border: none;
   border-radius: 7px;
   -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
   height: 21px;
   width:214px;
   margin:8px;
@@ -314,8 +309,6 @@ h3 { color: #554C46; }
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeae3', endColorstr='#f6f4ee',GradientType=0 ); /* IE6-9 */
   -webkit-border-top-left-radius: 2px;
   -webkit-border-top-right-radius: 2px;
-  -moz-border-radius-topleft: 2px;
-  -moz-border-radius-topright: 2px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -333,7 +326,6 @@ h3 { color: #554C46; }
   top: 0;
   right: 0;
   -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
 }
 #sidebar .archive-bt a:hover {
@@ -494,7 +486,6 @@ h3 { color: #554C46; }
   padding: 1px 6px 0;
   text-transform: uppercase;
   text-decoration: none;
-  -moz-border-radius: 20px;
   border-radius: 20px;
 }
 #sidebar .tags ul li a:hover {
@@ -665,8 +656,6 @@ ul.tags li {
   font-family: "Segoe UI",Arial,sans-serif;
   -webkit-border-top-left-radius: 2px;
   -webkit-border-top-right-radius: 2px;
-  -moz-border-radius-topleft: 2px;
-  -moz-border-radius-topright: 2px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -801,8 +790,6 @@ ul.tags li {
   font-family: "Segoe UI",Arial,sans-serif;
   -webkit-border-top-left-radius: 2px;
   -webkit-border-top-right-radius: 2px;
-  -moz-border-radius-topleft: 2px;
-  -moz-border-radius-topright: 2px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -842,15 +829,14 @@ ul.tags li {
   clear: both;
   color: #554C46;
   padding: 20px;
-  height: 68px;
+  height: /*68px*/ 56px;
   background-color: #f4f4f4;
   -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
 }
 #author h4 {
   font-size: 1.6em;
-  margin: 0 0 0 68px;
+  margin: 8px 0 0 68px;
 }
 #author p {
   margin: .75em 0 .75em 68px;
@@ -919,8 +905,6 @@ ul.tags li {
   float: left;
   -webkit-border-top-left-radius: 2px;
   -webkit-border-top-right-radius: 2px;
-  -moz-border-radius-topleft: 2px;
-  -moz-border-radius-topright: 2px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -1014,8 +998,6 @@ ul.tags li {
   float: left;
   -webkit-border-top-left-radius: 2px;
   -webkit-border-top-right-radius: 2px;
-  -moz-border-radius-topleft: 2px;
-  -moz-border-radius-topright: 2px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -1143,7 +1125,6 @@ ul.tags li {
   padding: 10px 5px;
   background: #ffcccc;
   -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
   border: 2px solid red;
   font-weight: 700;
@@ -1155,7 +1136,6 @@ ul.tags li {
   margin: 0 0 10px 0;
   background: #F4F4F4;
   -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
   font-weight: 700;
   font-size: 1.1em;
@@ -1176,7 +1156,6 @@ ul.tags li {
   margin: 0 0 10px 0;
   background: #F4F4F4;
   -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
 }
 #comment-form fieldset p {
@@ -1256,10 +1235,8 @@ ul.tags li {
   margin-left: 5px;
   padding: 6px 12px 4px;
   -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
   -webkit-transition: background 150ms ease;
-  -moz-transition: background 150ms ease;
   transition: background 150ms ease;
 }
 #comment-form input.preview:hover,
@@ -1360,7 +1337,6 @@ ul.tags li {
   padding: 1px 6px 0;
   text-transform: uppercase;
   text-decoration: none;
-  -moz-border-radius: 20px;
   border-radius: 20px;
 }
 #custom .tags ul li a:hover {
@@ -1405,7 +1381,6 @@ ul.tags li {
   background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
   -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
@@ -1432,15 +1407,10 @@ ul.tags li {
   cursor: default;
   background: #fff;
   -webkit-box-shadow: 0px 2px 2px #999;
-  -moz-box-shadow: 0px 2px 2px #999;
   box-shadow: 0px 2px 2px #999;
   -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
 }
-
-/* workarounds */
-* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
 
 .ui-menu {
   list-style:none;
@@ -1470,8 +1440,8 @@ ul.tags li {
   font-weight: normal;
   color: #554c46; background: #e2dac9;
   -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
 }
 /* plugins */
 #sidebar .weatherplus img {border:none;padding:0;background:none;}
+.shortArchives .arch-years li {background : none !important;padding-left: 0 !important;margin-left:-2px !important;}

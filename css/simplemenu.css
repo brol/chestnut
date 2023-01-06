@@ -26,8 +26,6 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeae3', endColorstr='#f6f4ee',GradientType=0 ); /* IE6-9 */
   -webkit-border-top-left-radius: 2px;
   -webkit-border-top-right-radius: 2px;
-  -moz-border-radius-topleft: 2px;
-  -moz-border-radius-topright: 2px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -52,10 +50,8 @@
   padding: 0 8px;
   float: left;
   -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
   -webkit-transition: background 150ms ease;
-  -moz-transition: background 150ms ease;
   transition: background 150ms ease;
 }
 #navsm a:hover {
@@ -69,7 +65,6 @@
   text-decoration: none;
   color: #fff;
   -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
 }
 #navsm li.active a:hover { background: #e2dac9;color: #554c46; }

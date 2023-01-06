@@ -48,7 +48,7 @@
               <a href="{{tpl:BlogURL}}feed/category/{{tpl:EntryCategoryShortURL}}/rss2" class="rssfeed">{{tpl:lang RSS Feed}}</a>
               {{tpl:lang about this category}}
             </p>
-            <p id="linktocomment"><a href="#comment">{{tpl:lang Comments}}</a>&nbsp;({{tpl:EntryCommentCount none="0" one="%s" more="%s"}})</p>
+            <!--<p id="linktocomment"><a href="#comment">{{tpl:lang Comments}}</a>&nbsp;({{tpl:EntryCommentCount none="0" one="%s" more="%s"}})</p>-->
         </div>
       </div><!-- End #article -->
 
@@ -65,7 +65,7 @@
     <div class="hr-style1"><hr /></div>
   </div>
 
-  <tpl:Entries category="#self ?sub" exclude_current="1" lastn="2">
+<!--  <tpl:Entries category="#self ?sub" exclude_current="1" lastn="2">
     <tpl:EntriesHeader><div class="post-related"><h2>{{tpl:lang You might also like}}</h2></tpl:EntriesHeader>
       <tpl:LoopPosition even="0"><div class="post"></tpl:LoopPosition>
       <tpl:LoopPosition even="1"><div class="post even"></tpl:LoopPosition>
@@ -75,7 +75,7 @@
 
         <h4><a href="{{tpl:EntryURL}}">{{tpl:EntryTitle encode_html="1"}}</a></h4>
 
-        <!-- # Entry -->
+        
         <tpl:EntryIf extended="1">
         <div class="post-content">{{tpl:EntryExcerpt encode_html="1" remove_html="1"}}</div>
         </tpl:EntryIf>
@@ -87,5 +87,5 @@
         </div>
         </div>
     <tpl:EntriesFooter></div><div class="hr-style1"><hr /></div></tpl:EntriesFooter>
-  </tpl:Entries>
+  </tpl:Entries>-->
 </tpl:Block>
