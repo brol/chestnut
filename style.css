@@ -1,17 +1,13 @@
-/*
-# -- BEGIN LICENSE BLOCK ---------------------------------------
-#
-# This file is part of Chestnut, a Dotclear 2 theme.
-#
-# Copyright (c) 2011 Azork - http://xtradotfreedotfr.free.fr
-# Contributor: Pierre Van Glabeke - https://github.com/brol/chestnut
-# Licensed under the GPL version 2.0 license.
-# See LICENSE file or
-# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-#
-# -- END LICENSE BLOCK -----------------------------------------
-*/
-
+/**
+ * @brief Chestnut, a theme for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Theme
+ *
+ * @author Azork (http://xtradotfreedotfr.free.fr/blog/), Pierre Van Glabeke
+ *
+ * @copyright GPL-2.0 https://www.gnu.org/licenses/gpl-2.0.html
+ */
 body {
   margin: 0;
   padding: 0;
@@ -24,7 +20,6 @@ a:link, a:visited {
   color: #554c46;
   text-decoration: none;
   outline: none;
-  -webkit-transition: color 150ms ease;
   transition: color 150ms ease;
 }
 a:hover {
@@ -42,7 +37,6 @@ pre {
   color: #554C46;
   font-size: 12px;
 	white-space: pre;
-  -webkit-box-shadow: 0px 2px 2px #dddddd;
   box-shadow: 0px 2px 2px #dddddd;
 }
 
@@ -245,26 +239,19 @@ h3 { color: #554C46; }
 
 #topsearch {
   background: yellow none repeat scroll 0 0;
-  -webkit-box-shadow: 1px 1px 2px 0 #463e39;
   box-shadow: 1px 1px 2px 0 #463e39;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
   height: 37px;
   position: absolute;
   right: 26px;
   top: 60px;
   width: 230px;
-  background: #766a61;
-  background: -moz-linear-gradient(top,  #766a61 0%, #574d47 100%);
-  background: -webkit-linear-gradient(top,  #766a61 0%,#574d47 100%);
-  background: linear-gradient(to bottom,  #766a61 0%,#574d47 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#766a61', endColorstr='#574d47',GradientType=0 );
+  background: linear-gradient(to bottom, #766a61 0%,#574d47 100%);
 }
 #topsearch p {
   background: #fff;
   border: none;
   border-radius: 7px;
-  -webkit-border-radius: 7px;
   height: 21px;
   width:214px;
   margin:8px;
@@ -302,13 +289,7 @@ h3 { color: #554C46; }
   color: #554c46;
   position: relative;
   border-bottom: 1px solid #d9d9d9;
-  background: #edeae3; /* Old browsers */
-  background: -moz-linear-gradient(top,  #edeae3 0%, #f6f4ee 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #edeae3 0%,#f6f4ee 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #edeae3 0%,#f6f4ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edeae3', endColorstr='#f6f4ee',GradientType=0 ); /* IE6-9 */
-  -webkit-border-top-left-radius: 2px;
-  -webkit-border-top-right-radius: 2px;
+  background: linear-gradient(to bottom, #edeae3 0%,#f6f4ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -325,7 +306,6 @@ h3 { color: #554C46; }
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 #sidebar .archive-bt a:hover {
@@ -654,8 +634,6 @@ ul.tags li {
   background: #554c46;
   margin-left: 4px;
   font-family: "Segoe UI",Arial,sans-serif;
-  -webkit-border-top-left-radius: 2px;
-  -webkit-border-top-right-radius: 2px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -788,8 +766,6 @@ ul.tags li {
   float: left;
   font-size: 1.0909em;
   font-family: "Segoe UI",Arial,sans-serif;
-  -webkit-border-top-left-radius: 2px;
-  -webkit-border-top-right-radius: 2px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -831,7 +807,6 @@ ul.tags li {
   padding: 20px;
   height: /*68px*/ 56px;
   background-color: #f4f4f4;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 #author h4 {
@@ -903,8 +878,6 @@ ul.tags li {
   padding: 4px 12px;
   margin-left: 8px;
   float: left;
-  -webkit-border-top-left-radius: 2px;
-  -webkit-border-top-right-radius: 2px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -996,8 +969,6 @@ ul.tags li {
   padding: 4px 12px;
   margin-left: 8px;
   float: left;
-  -webkit-border-top-left-radius: 2px;
-  -webkit-border-top-right-radius: 2px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
@@ -1124,7 +1095,6 @@ ul.tags li {
   margin: 10px 0;
   padding: 10px 5px;
   background: #ffcccc;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
   border: 2px solid red;
   font-weight: 700;
@@ -1135,7 +1105,6 @@ ul.tags li {
   padding: 10px 20px;
   margin: 0 0 10px 0;
   background: #F4F4F4;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
   font-weight: 700;
   font-size: 1.1em;
@@ -1155,7 +1124,6 @@ ul.tags li {
   padding: 10px 20px;
   margin: 0 0 10px 0;
   background: #F4F4F4;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 #comment-form fieldset p {
@@ -1234,9 +1202,7 @@ ul.tags li {
   border: none;
   margin-left: 5px;
   padding: 6px 12px 4px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
-  -webkit-transition: background 150ms ease;
   transition: background 150ms ease;
 }
 #comment-form input.preview:hover,
@@ -1375,12 +1341,7 @@ ul.tags li {
   height: 30px;
   color: #999;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eeeeee+100 */
-  background: #ffffff; /* Old browsers */
-  background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
-  -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
@@ -1406,9 +1367,7 @@ ul.tags li {
   position: absolute;
   cursor: default;
   background: #fff;
-  -webkit-box-shadow: 0px 2px 2px #999;
   box-shadow: 0px 2px 2px #999;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 
@@ -1439,7 +1398,6 @@ ul.tags li {
 .ui-menu .ui-menu-item a.ui-state-active {
   font-weight: normal;
   color: #554c46; background: #e2dac9;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 /* plugins */
