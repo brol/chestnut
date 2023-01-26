@@ -2,13 +2,13 @@
 thème d'Azork
 
 Le thème est compatible avec [Gravatar] (http://fr.gravatar.com/) pour personnaliser votre avatar.
-L'auteur d'un billet peut afficher une image personnalisée (avatar ou autres) en bas de page. Pour cela, il suffit d'ajouter une image au format jpg à la racine du dossier public de votre blog. Le nom de l'image jpg doit être identique au nom de l'auteur qui a posté le billet (ex: si votre pseudo est Toto comme auteur, alors le nom de l'image sera Toto.jpg).
+L'auteur d'un billet peut afficher une image personnalisée (avatar ou autres) en bas de page.
 Les widgets du volet supplémentaire sont intégrés au footer.
 
 
 Depuis "Personnaliser le thème", il est possible de choisir :
 * le type de menu à afficher (Menu des catégories (css/menucat.css) ou Simplemenu (pas de niveau, css/simplemenu.css) ou [Menu] (http://plugins.dotaddict.org/dc2/details/menu) (possibilité de niveaux sous forme verticale, css/menu.css) ou aucun menu)
-* la largeur de page (pixel = 1011px / pourcentage = 98%)
+* la largeur de page (fixe = 1011px / fluide = 98%)
 * d'afficher ou non en page d'accueil le slide
 * d'afficher ou non le slide dans les pages suivantes de la page d'accueil.
 

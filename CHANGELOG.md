@@ -1,20 +1,21 @@
 TODO :
-* corriger le bug avec le code ajax pour le moteur de recherche (cf noviny)
+* bug avec le code ajax pour le moteur de recherche (cf noviny)
+* bug billet inexistant -> warning
 
-v1.5-dev - 20-01-2023 - Pierre Van Glabeke et Philippe (DC Team)
+v1.5 - 20/01/2023 - Pierre Van Glabeke et Philippe (DC Team)
 * modifs html et css, localisation
 * dc2.24 requis
 
-v1.4.1 - 02-09-2022 - Pierre Van Glabeke
+v1.4.1 - 02/09/2022 - Pierre Van Glabeke
 * correction bug cf https://forum.dotclear.org/viewtopic.php?pid=347844#p347844
 * dc2.23 requis
 
-v1.4 - 26-11-2019 - Pierre Van Glabeke
+v1.4 - 26/11/2019 - Pierre Van Glabeke
 * modifs html
 * dc2.15 requis
 
-v1.3.4 - 02-11-2017 - Pierre Van Glabeke
-* ajout de home.html car DA est mal foutu et pas à jour !
+v1.3.4 - 02/11/2017 - Pierre Van Glabeke
+* ajout de home.html
 
 v1.3.3 - 30/10/2017 - Pierre Van Glabeke
 * bug prévisualisation des commentaires

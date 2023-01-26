@@ -1,6 +1,6 @@
 # Language: Français
 # Module: chestnut - 1.5
-# Date: 2023-01-04 15:30:11
+# Date: 2023-01-26 01:44:17
 # Author: Pierre Van Glabeke
 # Translated with translater 2022.12.26
 
@@ -9,66 +9,66 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: chestnut 1.5\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-04T15:30:11+00:00\n"
-"Last-Translator: brol\n"
+"PO-Revision-Date: 2023-01-26T01:44:17+00:00\n"
+"Last-Translator: Pierre Van Glabeke\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: _config.php:43
+#: _config.php:40
 msgid "Menu categories"
 msgstr "Menu des catégories"
 
-#: _config.php:46
+#: _config.php:43
 msgid "none"
 msgstr "aucun"
 
-#: _config.php:51
+#: _config.php:48
 msgid "Fixed"
 msgstr "Fixe"
 
-#: _config.php:52
+#: _config.php:49
 msgid "Fluid"
 msgstr "Fluide"
 
-#: _config.php:63
+#: _config.php:60
 msgid "File %s does not exist and directory %s is not writable."
 msgstr "Le fichier %s n'existe pas et le répertoire %s n'est pas accessible en écriture."
 
-#: _config.php:74
+#: _config.php:71
 msgid "No"
 msgstr "Non"
 
-#: _config.php:139
+#: _config.php:136
 msgid "Menu to display:"
 msgstr "Menu à afficher :"
 
-#: _config.php:142
+#: _config.php:139
 msgid "Plugins menu allowed: <a href=\"http://plugins.dotaddict.org/dc2/details/menu\">Menu</a> plugin or simpleMenu."
 msgstr "Plugins menu acceptés : <a href=\"http://plugins.dotaddict.org/dc2/details/menu\">Menu</a> ou simpleMenu."
 
-#: _config.php:148
+#: _config.php:145
 msgid "Width to display:"
 msgstr "Largeur à afficher :"
 
-#: _config.php:155
+#: _config.php:152
 msgid "Slide"
 msgstr "Slide"
 
-#: _config.php:159
+#: _config.php:156
 msgid "No slide"
 msgstr "Pas de slide"
 
-#: _config.php:168
+#: _config.php:165
 msgid "The title and the text (limited to the first 120 characters of the ticket) appear at the right of the image."
 msgstr "Le titre ainsi que le texte (limité aux 120 premiers caractères du billet) s'affichent à droite de l'image."
 
-#: _config.php:171
+#: _config.php:168
 msgid "Code:"
 msgstr "Code :"
 
-#: _config.php:176
+#: _config.php:173
 msgid "Display on the following pages:"
 msgstr "Afficher sur les pages suivantes :"
 

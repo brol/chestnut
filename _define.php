@@ -15,7 +15,7 @@ $this->registerModule(
     'Chestnut',
     'Dotclear Theme',
     'Azork, Pierre Van Glabeke',
-    '1.5-dev',
+    '1.5',
     [
         'requires' => [['core', '2.24']],
         'type'     => 'theme',
