@@ -16,7 +16,7 @@ if (!defined('DC_RC_PATH')) {
 }
 
 # Add New Translation English/French
-l10n::set(dirname(__FILE__) . '/locales/' . dcCore::app()->lang . '/public');
+l10n::set(__DIR__ . '/locales/' . dcCore::app()->lang . '/public');
 
 # appel css menu
 dcCore::app()->addBehavior('publicHeadContent', 'chestnutPublicHeadContent');
@@ -25,7 +25,7 @@ function chestnutPublicHeadContent()
 {
     # appel css menu
     $style = dcCore::app()->blog->settings->themes->chestnut_menu;
-    if (!preg_match('/^menucat|menu|simplemenu|menuno$/', $style)) {
+    if (!preg_match('/^menucat|menu|simplemenu|menuno$/', (string) $style)) {
         $style = 'menucat';
     }
 
@@ -34,7 +34,7 @@ function chestnutPublicHeadContent()
 
     # appel css width
     $style = dcCore::app()->blog->settings->themes->chestnut_width;
-    if (!preg_match('/^fixed|fluid$/', $style)) {
+    if (!preg_match('/^fixed|fluid$/', (string) $style)) {
         $style = 'fixed';
     }
 

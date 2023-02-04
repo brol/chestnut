@@ -2,6 +2,9 @@ TODO :
 * bug avec le code ajax pour le moteur de recherche (cf noviny)
 * bug billet inexistant -> warning
 
+v1.5.2 - 04/02/2023 - Pierre Van Glabeke
+* modifs code
+
 v1.5.1 - 28/01/2023 - Pierre Van Glabeke et Philippe (DC Team)
 * modifs html et css, localisation
 * dc2.24 requis

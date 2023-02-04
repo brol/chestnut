@@ -21,7 +21,7 @@ if (file_exists(dirname(__FILE__) . '/locales/' . dcCore::app()->lang . '/resour
 //PARAMS
 
 # Translations
-l10n::set(dirname(__FILE__) . '/locales/' . dcCore::app()->lang . '/main');
+l10n::set(__DIR__ . '/locales/' . dcCore::app()->lang . '/main');
 
 # Default values
 $default_menu     = 'menucat';
