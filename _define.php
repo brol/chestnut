@@ -15,9 +15,9 @@ $this->registerModule(
     'Chestnut',
     'Dotclear Theme',
     'Azork, Pierre Van Glabeke',
-    '1.5.2',
+    '1.5.3',
     [
-        'requires' => [['core', '2.24']],
+        'requires' => [['core', '2.26']],
         'type'     => 'theme',
         'tplset'   => 'mustek',
     ]
